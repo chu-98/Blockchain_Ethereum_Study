@@ -74,3 +74,4 @@ abstract contract Vote {
     }
 }
 
+// 기계공학부 수업 듣고 인프라 구축하느라 이걸로 대신한다.
