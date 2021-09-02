@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "solc": "^0.8.7-fixed",
+    "web3": "^0.3.6"
+  }
+}
