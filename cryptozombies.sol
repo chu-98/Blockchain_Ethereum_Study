@@ -35,12 +35,13 @@ contract ZombieFactory {
 
     // 7. 함수 선언) 함수 인자명을 언더바(_)로 시작해서 전역 변수와 구별하는 것이 관례
     // 끝에 ; 안 붙이네?
-    function _createZombie(string _name, uint _dna) private {
+    function _createZombie(string memory _name, uint _dna) private {
         // 8. 구조체와 배열 활용하기
         // array.push() 구조는 무언가를 배열의 끝에 추가해서 모든 원소가 순서를 유지하도록 한다
-        zombies.push(Zombie(_name, _dna));
-        uint zombieId = zombies.push().length - 1;
-        NewZombie(zombieId, name, dna)
+
+        // length를 안 쓰네?
+        uint id = zombies.push(Zombie(_name, _dna)) - 1
+        NewZombie(id, _name, _dna)
 
         // 9. Private / Public 함수
         // 솔리디티에서 함수는 기본적으로 public으로 선언
@@ -50,7 +51,7 @@ contract ZombieFactory {
     }
 
     // 10. 함수 더 알아보기) return: 반환값, view: 데이터를 보기만 하고 변경하지 않는다, pure: 어떤 데이터도 접근하지 않는 것
-    function _generateRandomDna(string _str) private view returns (uint) {
+    function _generateRandomDna(string memory _str) private view returns (uint) {
 
         // 11. Keccak256과 형 변환
         // 이더리움은 SHA3의 한 버전인 keccak256를 내장 해시 함수로 가지고 있다
@@ -62,7 +63,7 @@ contract ZombieFactory {
     }
 
     // 12. 종합하기
-    function createRandomZombie(string _name) public {
+    function createRandomZombie(string memory _name) public {
         // _generateRandomDna 라는 함수의 반환값이 uint randDna로 전달!
         uint randDna = _generateRandomDna(_name);
 
