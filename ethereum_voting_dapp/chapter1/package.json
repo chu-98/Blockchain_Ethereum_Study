@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "solc": "^0.8.7-fixed",
-    "web3": "^0.3.6",
+    "web3": "^0.20.6",
     "web3-eth-contract": "^1.5.2"
   },
   "devDependencies": {
