@@ -27,7 +27,12 @@ contract Voting {
       votesReceived[candidate] += 1;
     }
 
-    
+      // 후보자가 받은 총 득표수 확인 함수
+      // return은 후보자가 받은 득표수를 반환하는 것입니다
+      // view 라는 modifier(지정자) 하나를 추가하면 읽기 전용 함수라고 표시할 수 있습니다
+    function totalVotesFor(bytes32 candidate) view public returns(uint8) {
+      return votesReceived[candidate];
+    }
 
 
     // get count of votes for each candidates
