@@ -2,7 +2,6 @@
   "dependencies": {
     "ethereumjs-testrpc": "^6.0.3",
     "solc": "^0.8.7-fixed",
-    "web3": "^0.20.3",
     "web3-eth-contract": "^1.5.2"
   },
   "devDependencies": {
