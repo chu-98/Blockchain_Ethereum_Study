@@ -40,8 +40,8 @@ contract ZombieFactory {
         // array.push() 구조는 무언가를 배열의 끝에 추가해서 모든 원소가 순서를 유지하도록 한다
 
         // length를 안 쓰네?
-        uint id = zombies.push(Zombie(_name, _dna)) - 1
-        NewZombie(id, _name, _dna)
+        uint id = zombies.push(Zombie(_name, _dna)) - 1;
+        NewZombie(id, _name, _dna);
 
         // 9. Private / Public 함수
         // 솔리디티에서 함수는 기본적으로 public으로 선언
