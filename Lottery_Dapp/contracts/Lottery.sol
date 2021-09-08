@@ -6,13 +6,13 @@ contract Lottery {
     struct BetInfo {
         uint256 answerBlockNumber;
         // 맞춘 사람에게 돈을 보내줘야 한다
-        address payable better;
+        address payable bettor;
         bytes32 challenges;
     }
 
     address public owner;
 
-    // 도메인 정의??
+    // 도메인 설계!!
     uint256 private _tail;
     uint256 private _head;
     mapping (uint => BetInfo) private _bets;
@@ -39,9 +39,23 @@ contract Lottery {
     }
 
     function getPot() public view returns (uint256 pot) {
-        // _pot에 있는 돈을 better의 address에 전송
+        // _pot에 있는 돈을 bettor의 address에 전송
         // smart contract의 변수를 줘야 하는 수식어는 view가 들어가야 한다
         return _pot;
+    }
+
+    // Bet
+      // Save the bet to queue
+
+    // Distribute
+      // Check the answer
+      // 맞으면 돈 다 주고 틀리면 돈 가져가는 판단 필요
+
+    function getBetInfo(uint256 index) public view returns (uint256 answerBlockNumber, address bettor, bytes32 challenges) {
+        BetInfo memory b = _bets[index];
+        answerBlockNumber = b.answerBlockNumber;
+        bettor = b.bettor;
+        challenges = b.challenges;
     }
 }
 
