@@ -2,8 +2,18 @@
 pragma solidity >=0.4.22 <0.9.0;
 
 contract Lottery {
+    
+    struct BetInfo {
+        uint256 answerBlockNumber;
+        // 맞춘 사람에게 돈을 보내줘야 한다
+        address payable better;
+        bytes32 challenges;
+    }
 
     address public owner;
+
+    // 팟머니 모아둘 공간 필요
+    uint256 private _pot;
 
     // 가장 처음 배포가 되는 함수
     constructor() public {
@@ -12,6 +22,12 @@ contract Lottery {
 
     function getSomeValue() public pure returns (uint256 value) {
         return 5;
+    }
+
+    function getPot() public view returns (uint256 pot) {
+        // _pot에 있는 돈을 better의 address에 전송
+        // smart contract의 변수를 줘야 하는 수식어는 view가 들어가야 한다
+        return _pot;
     }
 }
 
@@ -25,3 +41,4 @@ contract Lottery {
 //         d. Data Migration
 // 4. 운영 a. public - test.net -> main.net
 //        b. private
+

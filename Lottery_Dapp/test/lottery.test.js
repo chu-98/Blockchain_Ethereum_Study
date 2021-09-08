@@ -16,4 +16,10 @@ contract("Lottery", function ([deployer, user1, user2]) {
     console.log(`value : ${value}`);
     assert.equal(value, 5);
   });
+
+  // 특정 부분만 테스트하고 싶으면 it.only를 적으면 된다
+  it.only("getPot should return current pot", async () => {
+    let pot = await lottery.getPot();
+    assert.equal(pot, 0);
+  });
 });
