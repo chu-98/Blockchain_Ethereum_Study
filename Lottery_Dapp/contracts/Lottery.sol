@@ -31,7 +31,7 @@ contract Lottery {
     
     // 가장 처음 배포가 되는 함수
     constructor() public {
-        owner = msg.sender;
+        owner = payable(msg.sender);
     }
 
     function getSomeValue() public pure returns (uint256 value) {
@@ -56,6 +56,18 @@ contract Lottery {
         answerBlockNumber = b.answerBlockNumber;
         bettor = b.bettor;
         challenges = b.challenges;
+    }
+
+    function pushBet(bytes32 challenges) public returns (bool) {
+        BetInfo memory b;
+        b.bettor = payable(msg.sender);
+        b.answerBlockNumber = block.number + BET_BLOCK_INTERVAL;
+        b.challenges = challenges;
+
+        _bets[_tail] = b;
+        _tail++;
+
+        return true;
     }
 }
 
