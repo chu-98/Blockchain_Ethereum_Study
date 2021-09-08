@@ -69,6 +69,13 @@ contract Lottery {
 
         return true;
     }
+
+    function popBet(uint256 index) public returns (bool) {
+        // delete: 값을 초기화해서 Gas를 돌려받는다 = 데이터를 더이상 저장하지 않는다
+        delete _bets[index];
+
+        return true;
+    }
 }
 
 // Dapp 설계 방법
