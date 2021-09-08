@@ -12,9 +12,23 @@ contract Lottery {
 
     address public owner;
 
+    // 도메인 정의??
+    uint256 private _tail;
+    uint256 private _head;
+    mapping (uint => BetInfo) private _bets;
+
+    // 블록 개수 제한 = 256개
+    uint256 constant internal BLOCK_LIMIT = 256;
+
+    // Block 간격은 3개이다
+    uint256 constant internal BET_BLOCK_INTERVAL = 3;
+
+    // 0.005 ETH = 5 * 10 ** 15 WEI, 5 ETH = 5 * 10 ** 18 WEI
+    uint256 constant internal BET_AMOUNT = 5 * 10 ** 15;
+
     // 팟머니 모아둘 공간 필요
     uint256 private _pot;
-
+    
     // 가장 처음 배포가 되는 함수
     constructor() public {
         owner = msg.sender;
