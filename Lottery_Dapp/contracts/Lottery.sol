@@ -29,24 +29,7 @@ contract Lottery {
     // 팟머니 모아둘 공간 필요
     uint256 private _pot;
 
-    /**
-     * @dev 베팅을 한다. 유저는 0.005 ETH를 보내야 하고, 베팅용 1 byte 글자를 보낸다.
-     * 큐에 저장된 베팅 정보는 이후 distribute 함수에서 해결된다.
-     * @param challenges 유저가 베팅하는 글자
-     * @return true 함수가 잘 수행되었는지 확인하는 bool 값
-    */
-
-    function bet(bytes32 challenges) public returns (bool result) {
-        // Check the proper ether is sent
-        require(msg.value == BET_AMOUNT, "Not enough ETH");
-
-        // Push bet to the queue
-        require(pushBet(challenges), "Fail to add a new Bet Info");
-
-        // Emit event
-
-        return true;
-    }
+    event BET(uint256 index, address bettor, uint256 amount, bytes32 challenges, uint256 answerBlockNumber);
 
     // 가장 처음 배포가 되는 함수
     constructor() public {
@@ -64,6 +47,19 @@ contract Lottery {
       // queue에서 bet 정보를 확인하고 돈이 제대로 들어왔는지도 확인
       // Save the bet to queue
 
+    function bet(bytes32 challenges) internal returns (bool result) {
+        // Check the proper ether is sent
+        require(msg.value == BET_AMOUNT, "Not enough ETH");
+
+        // Push bet to the queue
+        require(pushBet(challenges), "Fail to add a new Bet Info");
+
+        // Emit event
+        emit BET(_tail - 1, msg.sender, msg.value, challenges, block.number + BET_BLOCK_INTERVAL);
+
+        return true;
+    }
+
     // Distribute
       // Check the answer
       // 맞으면 돈 다 주고 틀리면 돈 가져가는 판단 필요
@@ -75,7 +71,7 @@ contract Lottery {
         challenges = b.challenges;
     }
 
-    function pushBet(bytes32 challenges) public returns (bool) {
+    function pushBet(bytes32 challenges) internal returns (bool) {
         BetInfo memory b;
         b.bettor = msg.sender;
         b.answerBlockNumber = block.number + BET_BLOCK_INTERVAL;
@@ -87,7 +83,7 @@ contract Lottery {
         return true;
     }
 
-    function popBet(uint256 index) public returns (bool) {
+    function popBet(uint256 index) internal returns (bool) {
         // delete: 값을 초기화해서 Gas를 돌려받는다 = 데이터를 더이상 저장하지 않는다
         delete _bets[index];
 
