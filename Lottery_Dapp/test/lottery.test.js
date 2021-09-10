@@ -1,9 +1,12 @@
 const Lottery = artifacts.require("Lottery");
+const assertRevert = require("./assertRevert");
 
 contract("Lottery", function ([deployer, user1, user2]) {
   let lottery;
+  let betAmount = 5 * 10 ** 15;
+  let bet_block_interval = 3;
+
   beforeEach(async () => {
-    console.log("Before Each");
     lottery = await Lottery.new();
   });
 
@@ -14,16 +17,41 @@ contract("Lottery", function ([deployer, user1, user2]) {
   });
 
   describe("Bet", function () {
-    it.only("Should Fail when the bet money is not 0.005 ETH", async () => {
+    it("Should Fail when the bet money is not 0.005 ETH", async () => {
       // Fail transaction
-      await lottery.bet("0xab", { from: user1, value: 4000000000000000 });
+      await assertRevert(lottery.bet("0xab", { from: user1, value: 4 }));
 
       // Transaction object {chainId, value, to, from, gas(Limit), gasPrice}
     });
-    it("Should put the bet to the bet queue with 1 bet", async () => {
-      // Bet
-      // Check Contract Balance == 0.05 ETH
+
+    it.only("Should put the bet to the bet queue with 1 bet", async () => {
+      // Bet - success?
+      let receipt = await lottery.bet("0xab", {
+        from: user1,
+        value: betAmount,
+      });
+
+      let pot = await lottery.getPot();
+      assert.equal(pot, 0);
+
+      // Check Contract Balance == 0.005 ETH
+      let contractBalance = await web3.eth.getBalance(lottery.address);
+      assert.equal(contractBalance, betAmount);
+
       // Check Bet Info
+      let currentBlockNumber = await web3.eth.getBlockNumber();
+      let bet = await lottery.getBetInfo(0);
+
+      assert.equal(
+        bet.answerBlockNumber,
+        currentBlockNumber + bet_block_interval
+      );
+
+      assert.equal(bet.bettor, user1);
+      assert.equal(bet.challenges, "0xab");
+
+      console.log(receipt);
+
       // Check Log
     });
   });
