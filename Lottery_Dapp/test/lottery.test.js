@@ -1,5 +1,6 @@
 const Lottery = artifacts.require("Lottery");
 const assertRevert = require("./assertRevert");
+const expectEvent = require("./expectEvent");
 
 contract("Lottery", function ([deployer, user1, user2]) {
   let lottery;
@@ -16,15 +17,17 @@ contract("Lottery", function ([deployer, user1, user2]) {
     assert.equal(pot, 0);
   });
 
-  describe("Bet", function () {
+  describe.only("Bet", function () {
     it("Should Fail when the bet money is not 0.005 ETH", async () => {
       // Fail transaction
-      await assertRevert(lottery.bet("0xab", { from: user1, value: 4 }));
+      await assertRevert(
+        lottery.bet("0xab", { from: user1, value: 4000000000000000 })
+      );
 
       // Transaction object {chainId, value, to, from, gas(Limit), gasPrice}
     });
 
-    it.only("Should put the bet to the bet queue with 1 bet", async () => {
+    it("Should put the bet to the bet queue with 1 bet", async () => {
       // Bet - success?
       let receipt = await lottery.bet("0xab", {
         from: user1,
@@ -50,9 +53,9 @@ contract("Lottery", function ([deployer, user1, user2]) {
       assert.equal(bet.bettor, user1);
       assert.equal(bet.challenges, "0xab");
 
-      console.log(receipt);
-
       // Check Log
+      // console.log(receipt);
+      await expectEvent.inLogs(receipt.logs, "BET");
     });
   });
 });
