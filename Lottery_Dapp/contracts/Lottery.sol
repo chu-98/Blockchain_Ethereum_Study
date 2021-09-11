@@ -29,6 +29,7 @@ contract Lottery {
     // 팟머니 모아둘 공간 필요
     uint256 private _pot;
 
+    enum BlockStatus{checkable, NotRevealed, BlockLimitPassed}
     event BET(uint256 index, address bettor, uint256 amount, bytes32 challenges, uint256 answerBlockNumber);
 
     // 가장 처음 배포가 되는 함수
@@ -61,6 +62,55 @@ contract Lottery {
     }
 
     // Distribute
+    function distribute() public {
+        // head 3 4 5 6 7 8 9 10 11 12 tail - queue
+        uint256 cur;
+        BetInfo memory b;
+        BlockStatus currentBlockStatus;
+
+        for(cur=_head;cur<_tail;cur++) {
+            b = _bets[cur];
+            currentBlockStatus = getBlockStatus(b.answerBlockNumber);
+
+            // 1. Checkable : block.number > answerBlockNumber && block.number < BLOCK_LIMIT + answerBlockNumber
+            if(currentBlockStatus == BlockStatus.checkable) {
+                // if win, bettor gets pot
+
+                // if fail, bettor's money goes pot
+
+                // if draw, refund bettor's money
+
+            }
+
+            // 2. Not Revealed : block.number <= answerBlockNumber
+            if(currentBlockStatus == BlockStatus.NotRevealed) {
+                break;
+            }
+            // 3. Block Limit Passed : block.number >= answerBlockNumber + BLOCK_LIMIT
+            if(currentBlockStatus == BlockStatus.BlockLimitPassed) {
+                // refund
+                // emit refund
+            }
+            
+            popBet(cur);
+        }
+    }
+
+    function getBlockStatus(uint256 answerBlockNumber) internal view returns (BlockStatus) {
+        if(block.number > answerBlockNumber && block.number < BLOCK_LIMIT + answerBlockNumber) {
+            return BlockStatus.checkable;
+        }
+
+        if(block.number <= answerBlockNumber) {
+            return BlockStatus.NotRevealed;
+        }
+
+        if(block.number >= answerBlockNumber + BLOCK_LIMIT) {
+            return BlockStatus.BlockLimitPassed;
+        }
+
+        return BlockStatus.BlockLimitPassed;
+    }
       // Check the answer
       // 맞으면 돈 다 주고 틀리면 돈 가져가는 판단 필요
 
