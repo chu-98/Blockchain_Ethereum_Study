@@ -30,6 +30,8 @@ contract Lottery {
     uint256 private _pot;
 
     enum BlockStatus{checkable, NotRevealed, BlockLimitPassed}
+    enum BettingResult{Fail, Win, Draw}
+
     event BET(uint256 index, address bettor, uint256 amount, bytes32 challenges, uint256 answerBlockNumber);
 
     // 가장 처음 배포가 되는 함수
@@ -94,6 +96,47 @@ contract Lottery {
             
             popBet(cur);
         }
+    }
+
+    /**
+    * @dev 베팅글자와 정답을 확인한다
+    * @param challenges 베팅 글자
+    * @param answer 블럭 해쉬
+    * @return 정답결과
+     */
+    function isMatch(bytes32 challenges, bytes32 answer) public pure returns (BettingResult) {
+        // challenges 0xab
+        // answer 0xab... ff 32 bytes
+
+        bytes32 c1 = challenges;
+        bytes32 c2 = challenges;
+
+        bytes32 a1 = answer[0];
+        bytes32 a2 = answer[0];
+
+        // Get First Number
+        c1 = c1 >> 4;
+        c1 = c1 << 4;
+
+        a1 = a1 >> 4;
+        a1 = a1 << 4;
+
+        // Get Second Number
+        c2 = c2 >> 4;
+        c2 = c2 << 4;
+
+        a2 = a2 >> 4;
+        a2 = a2 << 4;
+
+        if(a1 == c1 && a2 == c2) {
+            return BettingResult.Win;
+        }
+
+        if(a1 == c1 || a2 == c2) {
+            return BettingResult.Draw;
+        }
+
+        return BettingResult.Fail;
     }
 
     function getBlockStatus(uint256 answerBlockNumber) internal view returns (BlockStatus) {
