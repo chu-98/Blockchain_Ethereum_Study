@@ -28,6 +28,8 @@ contract Lottery {
 
     // 팟머니 모아둘 공간 필요
     uint256 private _pot;
+    bool private mode = false; // false : test mode, true : use real block hash
+    bytes32 public answerForTest;
 
     enum BlockStatus{checkable, NotRevealed, BlockLimitPassed}
     enum BettingResult{Fail, Win, Draw}
@@ -69,6 +71,7 @@ contract Lottery {
         uint256 cur;
         BetInfo memory b;
         BlockStatus currentBlockStatus;
+        BettingResult currentBettingResult;
 
         for(cur=_head;cur<_tail;cur++) {
             b = _bets[cur];
@@ -76,11 +79,23 @@ contract Lottery {
 
             // 1. Checkable : block.number > answerBlockNumber && block.number < BLOCK_LIMIT + answerBlockNumber
             if(currentBlockStatus == BlockStatus.checkable) {
+                currentBettingResult = isMatch(b.challenges, blockhash(b.answerBlockNumber));
                 // if win, bettor gets pot
-
+                if(currentBettingResult == BettingResult.Win) {
+                    // transfer pot
+                    // pot = 0
+                    // emit WIN
+                }
                 // if fail, bettor's money goes pot
-
+                if(currentBettingResult == BettingResult.Fail) {
+                    // pot = pot + BET_AMOUNT
+                    // emit FAIL
+                }
                 // if draw, refund bettor's money
+                if(currentBettingResult == BettingResult.Win) {
+                    // transfer only BET_AMOUNT
+                    // emit DRAW
+                }
 
             }
 
@@ -96,6 +111,16 @@ contract Lottery {
             
             popBet(cur);
         }
+    }
+
+    function setAnswerForTest(bytes32 answer) public returns (bool result) {
+        require(msg.sender == owner, "Only owner can set the answer for test mode");
+        answerForTest = answer;
+        return true;
+    }
+
+    function getAnswerBlockHash(uint256 answerBlockNumber) internal view returns (bytes32 answer) {
+        return mode ? blockhash(answerBlockNumber) : answerForTest;
     }
 
     /**

@@ -151,24 +151,14 @@
   "ast": {
     "absolutePath": "project:/contracts/Lottery.sol",
     "exportedSymbols": {
-      "Lottery": [
-        416
-      ]
+      "Lottery": [416]
     },
     "id": 417,
     "nodeType": "SourceUnit",
     "nodes": [
       {
         "id": 1,
-        "literals": [
-          "solidity",
-          ">=",
-          "0.4",
-          ".22",
-          "<",
-          "0.9",
-          ".0"
-        ],
+        "literals": ["solidity", ">=", "0.4", ".22", "<", "0.9", ".0"],
         "nodeType": "PragmaDirective",
         "src": "32:32:0"
       },
@@ -179,9 +169,7 @@
         "documentation": null,
         "fullyImplemented": true,
         "id": 416,
-        "linearizedBaseContracts": [
-          416
-        ],
+        "linearizedBaseContracts": [416],
         "name": "Lottery",
         "nodeType": "ContractDefinition",
         "nodes": [
@@ -1113,10 +1101,7 @@
                       "id": 77,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        434,
-                        435
-                      ],
+                      "overloadedDeclarations": [434, 435],
                       "referencedDeclaration": 435,
                       "src": "1605:7:0",
                       "typeDescriptions": {
@@ -1228,10 +1213,7 @@
                       "id": 85,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        434,
-                        435
-                      ],
+                      "overloadedDeclarations": [434, 435],
                       "referencedDeclaration": 435,
                       "src": "1699:7:0",
                       "typeDescriptions": {
@@ -1608,9 +1590,7 @@
               "src": "1961:1068:0",
               "statements": [
                 {
-                  "assignments": [
-                    114
-                  ],
+                  "assignments": [114],
                   "declarations": [
                     {
                       "constant": false,
@@ -1645,9 +1625,7 @@
                   "src": "2023:11:0"
                 },
                 {
-                  "assignments": [
-                    117
-                  ],
+                  "assignments": [117],
                   "declarations": [
                     {
                       "constant": false,
@@ -1684,9 +1662,7 @@
                   "src": "2044:16:0"
                 },
                 {
-                  "assignments": [
-                    120
-                  ],
+                  "assignments": [120],
                   "declarations": [
                     {
                       "constant": false,
@@ -2343,9 +2319,7 @@
               "src": "3289:646:0",
               "statements": [
                 {
-                  "assignments": [
-                    181
-                  ],
+                  "assignments": [181],
                   "declarations": [
                     {
                       "constant": false,
@@ -2392,9 +2366,7 @@
                   "src": "3365:23:0"
                 },
                 {
-                  "assignments": [
-                    185
-                  ],
+                  "assignments": [185],
                   "declarations": [
                     {
                       "constant": false,
@@ -2441,9 +2413,7 @@
                   "src": "3398:23:0"
                 },
                 {
-                  "assignments": [
-                    189
-                  ],
+                  "assignments": [189],
                   "declarations": [
                     {
                       "constant": false,
@@ -2522,9 +2492,7 @@
                   "src": "3432:22:0"
                 },
                 {
-                  "assignments": [
-                    195
-                  ],
+                  "assignments": [195],
                   "declarations": [
                     {
                       "constant": false,
@@ -4326,9 +4294,7 @@
               "src": "4681:159:0",
               "statements": [
                 {
-                  "assignments": [
-                    335
-                  ],
+                  "assignments": [335],
                   "declarations": [
                     {
                       "constant": false,
@@ -4730,9 +4696,7 @@
               "src": "4907:230:0",
               "statements": [
                 {
-                  "assignments": [
-                    364
-                  ],
+                  "assignments": [364],
                   "declarations": [
                     {
                       "constant": false,
@@ -5413,23 +5377,13 @@
     "attributes": {
       "absolutePath": "project:/contracts/Lottery.sol",
       "exportedSymbols": {
-        "Lottery": [
-          416
-        ]
+        "Lottery": [416]
       }
     },
     "children": [
       {
         "attributes": {
-          "literals": [
-            "solidity",
-            ">=",
-            "0.4",
-            ".22",
-            "<",
-            "0.9",
-            ".0"
-          ]
+          "literals": ["solidity", ">=", "0.4", ".22", "<", "0.9", ".0"]
         },
         "id": 1,
         "name": "PragmaDirective",
@@ -5437,18 +5391,12 @@
       },
       {
         "attributes": {
-          "baseContracts": [
-            null
-          ],
-          "contractDependencies": [
-            null
-          ],
+          "baseContracts": [null],
+          "contractDependencies": [null],
           "contractKind": "contract",
           "documentation": null,
           "fullyImplemented": true,
-          "linearizedBaseContracts": [
-            416
-          ],
+          "linearizedBaseContracts": [416],
           "name": "Lottery",
           "scope": 417
         },
@@ -6128,9 +6076,7 @@
               "implemented": true,
               "isConstructor": true,
               "kind": "constructor",
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "",
               "scope": 416,
               "stateMutability": "nonpayable",
@@ -6140,9 +6086,7 @@
             "children": [
               {
                 "attributes": {
-                  "parameters": [
-                    null
-                  ]
+                  "parameters": [null]
                 },
                 "children": [],
                 "id": 54,
@@ -6151,9 +6095,7 @@
               },
               {
                 "attributes": {
-                  "parameters": [
-                    null
-                  ]
+                  "parameters": [null]
                 },
                 "children": [],
                 "id": 55,
@@ -6178,9 +6120,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 10,
                               "type": "address",
                               "value": "owner"
@@ -6204,9 +6144,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 431,
                                   "type": "msg",
                                   "value": "msg"
@@ -6246,9 +6184,7 @@
               "implemented": true,
               "isConstructor": false,
               "kind": "function",
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "getPot",
               "scope": 416,
               "stateMutability": "view",
@@ -6258,9 +6194,7 @@
             "children": [
               {
                 "attributes": {
-                  "parameters": [
-                    null
-                  ]
+                  "parameters": [null]
                 },
                 "children": [],
                 "id": 63,
@@ -6310,9 +6244,7 @@
                       {
                         "attributes": {
                           "argumentTypes": null,
-                          "overloadedDeclarations": [
-                            null
-                          ],
+                          "overloadedDeclarations": [null],
                           "referencedDeclaration": 33,
                           "type": "uint256",
                           "value": "_pot"
@@ -6342,9 +6274,7 @@
               "implemented": true,
               "isConstructor": false,
               "kind": "function",
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "bet",
               "scope": 416,
               "stateMutability": "nonpayable",
@@ -6430,9 +6360,7 @@
                           "isPure": false,
                           "isStructConstructorCall": false,
                           "lValueRequested": false,
-                          "names": [
-                            null
-                          ],
+                          "names": [null],
                           "type": "tuple()",
                           "type_conversion": false
                         },
@@ -6449,10 +6377,7 @@
                                   "typeString": "literal_string \"Not enough ETH\""
                                 }
                               ],
-                              "overloadedDeclarations": [
-                                434,
-                                435
-                              ],
+                              "overloadedDeclarations": [434, 435],
                               "referencedDeclaration": 435,
                               "type": "function (bool,string memory) pure",
                               "value": "require"
@@ -6491,9 +6416,7 @@
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
+                                      "overloadedDeclarations": [null],
                                       "referencedDeclaration": 431,
                                       "type": "msg",
                                       "value": "msg"
@@ -6510,9 +6433,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 31,
                                   "type": "uint256",
                                   "value": "BET_AMOUNT"
@@ -6563,9 +6484,7 @@
                           "isPure": false,
                           "isStructConstructorCall": false,
                           "lValueRequested": false,
-                          "names": [
-                            null
-                          ],
+                          "names": [null],
                           "type": "tuple()",
                           "type_conversion": false
                         },
@@ -6582,10 +6501,7 @@
                                   "typeString": "literal_string \"Fail to add a new Bet Info\""
                                 }
                               ],
-                              "overloadedDeclarations": [
-                                434,
-                                435
-                              ],
+                              "overloadedDeclarations": [434, 435],
                               "referencedDeclaration": 435,
                               "type": "function (bool,string memory) pure",
                               "value": "require"
@@ -6602,9 +6518,7 @@
                               "isPure": false,
                               "isStructConstructorCall": false,
                               "lValueRequested": false,
-                              "names": [
-                                null
-                              ],
+                              "names": [null],
                               "type": "bool",
                               "type_conversion": false
                             },
@@ -6617,9 +6531,7 @@
                                       "typeString": "bytes32"
                                     }
                                   ],
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 400,
                                   "type": "function (bytes32) returns (bool)",
                                   "value": "pushBet"
@@ -6631,9 +6543,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 72,
                                   "type": "bytes32",
                                   "value": "challenges"
@@ -6684,9 +6594,7 @@
                           "isPure": false,
                           "isStructConstructorCall": false,
                           "lValueRequested": false,
-                          "names": [
-                            null
-                          ],
+                          "names": [null],
                           "type": "tuple()",
                           "type_conversion": false
                         },
@@ -6715,9 +6623,7 @@
                                   "typeString": "uint256"
                                 }
                               ],
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 53,
                               "type": "function (uint256,address,uint256,bytes32,uint256)",
                               "value": "BET"
@@ -6744,9 +6650,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 12,
                                   "type": "uint256",
                                   "value": "_tail"
@@ -6792,9 +6696,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 431,
                                   "type": "msg",
                                   "value": "msg"
@@ -6823,9 +6725,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 431,
                                   "type": "msg",
                                   "value": "msg"
@@ -6842,9 +6742,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 72,
                               "type": "bytes32",
                               "value": "challenges"
@@ -6883,9 +6781,7 @@
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
+                                      "overloadedDeclarations": [null],
                                       "referencedDeclaration": 421,
                                       "type": "block",
                                       "value": "block"
@@ -6902,9 +6798,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 24,
                                   "type": "uint256",
                                   "value": "BET_BLOCK_INTERVAL"
@@ -6971,9 +6865,7 @@
               "implemented": true,
               "isConstructor": false,
               "kind": "function",
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "distribute",
               "scope": 416,
               "stateMutability": "nonpayable",
@@ -6983,9 +6875,7 @@
             "children": [
               {
                 "attributes": {
-                  "parameters": [
-                    null
-                  ]
+                  "parameters": [null]
                 },
                 "children": [],
                 "id": 111,
@@ -6994,9 +6884,7 @@
               },
               {
                 "attributes": {
-                  "parameters": [
-                    null
-                  ]
+                  "parameters": [null]
                 },
                 "children": [],
                 "id": 112,
@@ -7007,9 +6895,7 @@
                 "children": [
                   {
                     "attributes": {
-                      "assignments": [
-                        114
-                      ],
+                      "assignments": [114],
                       "initialValue": null
                     },
                     "children": [
@@ -7046,9 +6932,7 @@
                   },
                   {
                     "attributes": {
-                      "assignments": [
-                        117
-                      ],
+                      "assignments": [117],
                       "initialValue": null
                     },
                     "children": [
@@ -7087,9 +6971,7 @@
                   },
                   {
                     "attributes": {
-                      "assignments": [
-                        120
-                      ],
+                      "assignments": [120],
                       "initialValue": null
                     },
                     "children": [
@@ -7144,9 +7026,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 114,
                                   "type": "uint256",
                                   "value": "cur"
@@ -7158,9 +7038,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 14,
                                   "type": "uint256",
                                   "value": "_head"
@@ -7197,9 +7075,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 114,
                               "type": "uint256",
                               "value": "cur"
@@ -7211,9 +7087,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 12,
                               "type": "uint256",
                               "value": "_tail"
@@ -7244,9 +7118,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 114,
                                   "type": "uint256",
                                   "value": "cur"
@@ -7283,9 +7155,7 @@
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
+                                      "overloadedDeclarations": [null],
                                       "referencedDeclaration": 117,
                                       "type": "struct Lottery.BetInfo memory",
                                       "value": "b"
@@ -7307,9 +7177,7 @@
                                       {
                                         "attributes": {
                                           "argumentTypes": null,
-                                          "overloadedDeclarations": [
-                                            null
-                                          ],
+                                          "overloadedDeclarations": [null],
                                           "referencedDeclaration": 18,
                                           "type": "mapping(uint256 => struct Lottery.BetInfo storage ref)",
                                           "value": "_bets"
@@ -7321,9 +7189,7 @@
                                       {
                                         "attributes": {
                                           "argumentTypes": null,
-                                          "overloadedDeclarations": [
-                                            null
-                                          ],
+                                          "overloadedDeclarations": [null],
                                           "referencedDeclaration": 114,
                                           "type": "uint256",
                                           "value": "cur"
@@ -7363,9 +7229,7 @@
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
+                                      "overloadedDeclarations": [null],
                                       "referencedDeclaration": 120,
                                       "type": "enum Lottery.BlockStatus",
                                       "value": "currentBlockStatus"
@@ -7382,9 +7246,7 @@
                                       "isPure": false,
                                       "isStructConstructorCall": false,
                                       "lValueRequested": false,
-                                      "names": [
-                                        null
-                                      ],
+                                      "names": [null],
                                       "type": "enum Lottery.BlockStatus",
                                       "type_conversion": false
                                     },
@@ -7397,9 +7259,7 @@
                                               "typeString": "uint256"
                                             }
                                           ],
-                                          "overloadedDeclarations": [
-                                            null
-                                          ],
+                                          "overloadedDeclarations": [null],
                                           "referencedDeclaration": 323,
                                           "type": "function (uint256) view returns (enum Lottery.BlockStatus)",
                                           "value": "getBlockStatus"
@@ -7423,9 +7283,7 @@
                                           {
                                             "attributes": {
                                               "argumentTypes": null,
-                                              "overloadedDeclarations": [
-                                                null
-                                              ],
+                                              "overloadedDeclarations": [null],
                                               "referencedDeclaration": 117,
                                               "type": "struct Lottery.BetInfo memory",
                                               "value": "b"
@@ -7477,9 +7335,7 @@
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
+                                      "overloadedDeclarations": [null],
                                       "referencedDeclaration": 120,
                                       "type": "enum Lottery.BlockStatus",
                                       "value": "currentBlockStatus"
@@ -7503,9 +7359,7 @@
                                       {
                                         "attributes": {
                                           "argumentTypes": null,
-                                          "overloadedDeclarations": [
-                                            null
-                                          ],
+                                          "overloadedDeclarations": [null],
                                           "referencedDeclaration": 37,
                                           "type": "type(enum Lottery.BlockStatus)",
                                           "value": "BlockStatus"
@@ -7526,9 +7380,7 @@
                               },
                               {
                                 "attributes": {
-                                  "statements": [
-                                    null
-                                  ]
+                                  "statements": [null]
                                 },
                                 "children": [],
                                 "id": 149,
@@ -7563,9 +7415,7 @@
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
+                                      "overloadedDeclarations": [null],
                                       "referencedDeclaration": 120,
                                       "type": "enum Lottery.BlockStatus",
                                       "value": "currentBlockStatus"
@@ -7589,9 +7439,7 @@
                                       {
                                         "attributes": {
                                           "argumentTypes": null,
-                                          "overloadedDeclarations": [
-                                            null
-                                          ],
+                                          "overloadedDeclarations": [null],
                                           "referencedDeclaration": 37,
                                           "type": "type(enum Lottery.BlockStatus)",
                                           "value": "BlockStatus"
@@ -7650,9 +7498,7 @@
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
+                                      "overloadedDeclarations": [null],
                                       "referencedDeclaration": 120,
                                       "type": "enum Lottery.BlockStatus",
                                       "value": "currentBlockStatus"
@@ -7676,9 +7522,7 @@
                                       {
                                         "attributes": {
                                           "argumentTypes": null,
-                                          "overloadedDeclarations": [
-                                            null
-                                          ],
+                                          "overloadedDeclarations": [null],
                                           "referencedDeclaration": 37,
                                           "type": "type(enum Lottery.BlockStatus)",
                                           "value": "BlockStatus"
@@ -7699,9 +7543,7 @@
                               },
                               {
                                 "attributes": {
-                                  "statements": [
-                                    null
-                                  ]
+                                  "statements": [null]
                                 },
                                 "children": [],
                                 "id": 162,
@@ -7723,9 +7565,7 @@
                                   "isPure": false,
                                   "isStructConstructorCall": false,
                                   "lValueRequested": false,
-                                  "names": [
-                                    null
-                                  ],
+                                  "names": [null],
                                   "type": "bool",
                                   "type_conversion": false
                                 },
@@ -7738,9 +7578,7 @@
                                           "typeString": "uint256"
                                         }
                                       ],
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
+                                      "overloadedDeclarations": [null],
                                       "referencedDeclaration": 415,
                                       "type": "function (uint256) returns (bool)",
                                       "value": "popBet"
@@ -7752,9 +7590,7 @@
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
+                                      "overloadedDeclarations": [null],
                                       "referencedDeclaration": 114,
                                       "type": "uint256",
                                       "value": "cur"
@@ -7799,9 +7635,7 @@
               "implemented": true,
               "isConstructor": false,
               "kind": "function",
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "isMatch",
               "scope": 416,
               "stateMutability": "pure",
@@ -7907,9 +7741,7 @@
                 "children": [
                   {
                     "attributes": {
-                      "assignments": [
-                        181
-                      ]
+                      "assignments": [181]
                     },
                     "children": [
                       {
@@ -7941,9 +7773,7 @@
                       {
                         "attributes": {
                           "argumentTypes": null,
-                          "overloadedDeclarations": [
-                            null
-                          ],
+                          "overloadedDeclarations": [null],
                           "referencedDeclaration": 173,
                           "type": "bytes32",
                           "value": "challenges"
@@ -7959,9 +7789,7 @@
                   },
                   {
                     "attributes": {
-                      "assignments": [
-                        185
-                      ]
+                      "assignments": [185]
                     },
                     "children": [
                       {
@@ -7993,9 +7821,7 @@
                       {
                         "attributes": {
                           "argumentTypes": null,
-                          "overloadedDeclarations": [
-                            null
-                          ],
+                          "overloadedDeclarations": [null],
                           "referencedDeclaration": 173,
                           "type": "bytes32",
                           "value": "challenges"
@@ -8011,9 +7837,7 @@
                   },
                   {
                     "attributes": {
-                      "assignments": [
-                        189
-                      ]
+                      "assignments": [189]
                     },
                     "children": [
                       {
@@ -8055,9 +7879,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 175,
                               "type": "bytes32",
                               "value": "answer"
@@ -8095,9 +7917,7 @@
                   },
                   {
                     "attributes": {
-                      "assignments": [
-                        195
-                      ]
+                      "assignments": [195]
                     },
                     "children": [
                       {
@@ -8139,9 +7959,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 175,
                               "type": "bytes32",
                               "value": "answer"
@@ -8193,9 +8011,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 181,
                               "type": "bytes32",
                               "value": "c1"
@@ -8222,9 +8038,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 181,
                                   "type": "bytes32",
                                   "value": "c1"
@@ -8281,9 +8095,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 181,
                               "type": "bytes32",
                               "value": "c1"
@@ -8310,9 +8122,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 181,
                                   "type": "bytes32",
                                   "value": "c1"
@@ -8369,9 +8179,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 189,
                               "type": "bytes32",
                               "value": "a1"
@@ -8398,9 +8206,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 189,
                                   "type": "bytes32",
                                   "value": "a1"
@@ -8457,9 +8263,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 189,
                               "type": "bytes32",
                               "value": "a1"
@@ -8486,9 +8290,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 189,
                                   "type": "bytes32",
                                   "value": "a1"
@@ -8545,9 +8347,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 185,
                               "type": "bytes32",
                               "value": "c2"
@@ -8574,9 +8374,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 185,
                                   "type": "bytes32",
                                   "value": "c2"
@@ -8633,9 +8431,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 185,
                               "type": "bytes32",
                               "value": "c2"
@@ -8662,9 +8458,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 185,
                                   "type": "bytes32",
                                   "value": "c2"
@@ -8721,9 +8515,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 195,
                               "type": "bytes32",
                               "value": "a2"
@@ -8750,9 +8542,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 195,
                                   "type": "bytes32",
                                   "value": "a2"
@@ -8809,9 +8599,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 195,
                               "type": "bytes32",
                               "value": "a2"
@@ -8838,9 +8626,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 195,
                                   "type": "bytes32",
                                   "value": "a2"
@@ -8919,9 +8705,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 189,
                                   "type": "bytes32",
                                   "value": "a1"
@@ -8933,9 +8717,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 181,
                                   "type": "bytes32",
                                   "value": "c1"
@@ -8967,9 +8749,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 195,
                                   "type": "bytes32",
                                   "value": "a2"
@@ -8981,9 +8761,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 185,
                                   "type": "bytes32",
                                   "value": "c2"
@@ -9024,9 +8802,7 @@
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
+                                      "overloadedDeclarations": [null],
                                       "referencedDeclaration": 41,
                                       "type": "type(enum Lottery.BettingResult)",
                                       "value": "BettingResult"
@@ -9093,9 +8869,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 189,
                                   "type": "bytes32",
                                   "value": "a1"
@@ -9107,9 +8881,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 181,
                                   "type": "bytes32",
                                   "value": "c1"
@@ -9141,9 +8913,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 195,
                                   "type": "bytes32",
                                   "value": "a2"
@@ -9155,9 +8925,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 185,
                                   "type": "bytes32",
                                   "value": "c2"
@@ -9198,9 +8966,7 @@
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
+                                      "overloadedDeclarations": [null],
                                       "referencedDeclaration": 41,
                                       "type": "type(enum Lottery.BettingResult)",
                                       "value": "BettingResult"
@@ -9249,9 +9015,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 41,
                               "type": "type(enum Lottery.BettingResult)",
                               "value": "BettingResult"
@@ -9286,9 +9050,7 @@
               "implemented": true,
               "isConstructor": false,
               "kind": "function",
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "getBlockStatus",
               "scope": 416,
               "stateMutability": "view",
@@ -9416,9 +9178,7 @@
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
+                                      "overloadedDeclarations": [null],
                                       "referencedDeclaration": 421,
                                       "type": "block",
                                       "value": "block"
@@ -9435,9 +9195,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 278,
                                   "type": "uint256",
                                   "value": "answerBlockNumber"
@@ -9481,9 +9239,7 @@
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
+                                      "overloadedDeclarations": [null],
                                       "referencedDeclaration": 421,
                                       "type": "block",
                                       "value": "block"
@@ -9515,9 +9271,7 @@
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
+                                      "overloadedDeclarations": [null],
                                       "referencedDeclaration": 21,
                                       "type": "uint256",
                                       "value": "BLOCK_LIMIT"
@@ -9529,9 +9283,7 @@
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
+                                      "overloadedDeclarations": [null],
                                       "referencedDeclaration": 278,
                                       "type": "uint256",
                                       "value": "answerBlockNumber"
@@ -9577,9 +9329,7 @@
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
+                                      "overloadedDeclarations": [null],
                                       "referencedDeclaration": 37,
                                       "type": "type(enum Lottery.BlockStatus)",
                                       "value": "BlockStatus"
@@ -9643,9 +9393,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 421,
                                   "type": "block",
                                   "value": "block"
@@ -9662,9 +9410,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 278,
                               "type": "uint256",
                               "value": "answerBlockNumber"
@@ -9700,9 +9446,7 @@
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
+                                      "overloadedDeclarations": [null],
                                       "referencedDeclaration": 37,
                                       "type": "type(enum Lottery.BlockStatus)",
                                       "value": "BlockStatus"
@@ -9766,9 +9510,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 421,
                                   "type": "block",
                                   "value": "block"
@@ -9800,9 +9542,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 278,
                                   "type": "uint256",
                                   "value": "answerBlockNumber"
@@ -9814,9 +9554,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 21,
                                   "type": "uint256",
                                   "value": "BLOCK_LIMIT"
@@ -9857,9 +9595,7 @@
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
+                                      "overloadedDeclarations": [null],
                                       "referencedDeclaration": 37,
                                       "type": "type(enum Lottery.BlockStatus)",
                                       "value": "BlockStatus"
@@ -9908,9 +9644,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 37,
                               "type": "type(enum Lottery.BlockStatus)",
                               "value": "BlockStatus"
@@ -9945,9 +9679,7 @@
               "implemented": true,
               "isConstructor": false,
               "kind": "function",
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "getBetInfo",
               "scope": 416,
               "stateMutability": "view",
@@ -10078,9 +9810,7 @@
                 "children": [
                   {
                     "attributes": {
-                      "assignments": [
-                        335
-                      ]
+                      "assignments": [335]
                     },
                     "children": [
                       {
@@ -10124,9 +9854,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 18,
                               "type": "mapping(uint256 => struct Lottery.BetInfo storage ref)",
                               "value": "_bets"
@@ -10138,9 +9866,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 325,
                               "type": "uint256",
                               "value": "index"
@@ -10175,9 +9901,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 328,
                               "type": "uint256",
                               "value": "answerBlockNumber"
@@ -10201,9 +9925,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 335,
                                   "type": "struct Lottery.BetInfo memory",
                                   "value": "b"
@@ -10243,9 +9965,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 330,
                               "type": "address",
                               "value": "bettor"
@@ -10269,9 +9989,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 335,
                                   "type": "struct Lottery.BetInfo memory",
                                   "value": "b"
@@ -10311,9 +10029,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 332,
                               "type": "bytes32",
                               "value": "challenges"
@@ -10337,9 +10053,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 335,
                                   "type": "struct Lottery.BetInfo memory",
                                   "value": "b"
@@ -10379,9 +10093,7 @@
               "implemented": true,
               "isConstructor": false,
               "kind": "function",
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "pushBet",
               "scope": 416,
               "stateMutability": "nonpayable",
@@ -10459,9 +10171,7 @@
                 "children": [
                   {
                     "attributes": {
-                      "assignments": [
-                        364
-                      ],
+                      "assignments": [364],
                       "initialValue": null
                     },
                     "children": [
@@ -10526,9 +10236,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 364,
                                   "type": "struct Lottery.BetInfo memory",
                                   "value": "b"
@@ -10557,9 +10265,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 431,
                                   "type": "msg",
                                   "value": "msg"
@@ -10611,9 +10317,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 364,
                                   "type": "struct Lottery.BetInfo memory",
                                   "value": "b"
@@ -10657,9 +10361,7 @@
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
+                                      "overloadedDeclarations": [null],
                                       "referencedDeclaration": 421,
                                       "type": "block",
                                       "value": "block"
@@ -10676,9 +10378,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 24,
                                   "type": "uint256",
                                   "value": "BET_BLOCK_INTERVAL"
@@ -10730,9 +10430,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 364,
                                   "type": "struct Lottery.BetInfo memory",
                                   "value": "b"
@@ -10749,9 +10447,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 358,
                               "type": "bytes32",
                               "value": "challenges"
@@ -10796,9 +10492,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 18,
                                   "type": "mapping(uint256 => struct Lottery.BetInfo storage ref)",
                                   "value": "_bets"
@@ -10810,9 +10504,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 12,
                                   "type": "uint256",
                                   "value": "_tail"
@@ -10829,9 +10521,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 364,
                               "type": "struct Lottery.BetInfo memory",
                               "value": "b"
@@ -10867,9 +10557,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 12,
                               "type": "uint256",
                               "value": "_tail"
@@ -10931,9 +10619,7 @@
               "implemented": true,
               "isConstructor": false,
               "kind": "function",
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "popBet",
               "scope": 416,
               "stateMutability": "nonpayable",
@@ -11036,9 +10722,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 18,
                                   "type": "mapping(uint256 => struct Lottery.BetInfo storage ref)",
                                   "value": "_bets"
@@ -11050,9 +10734,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 402,
                                   "type": "uint256",
                                   "value": "index"
