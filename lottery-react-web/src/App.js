@@ -293,6 +293,7 @@ let contractABI = [
 class App extends Component {
   async componentDidMount() {
     await this.initWeb3();
+    await this.getBetEvent();
   }
 
   initWeb3 = async () => {
@@ -332,23 +333,30 @@ class App extends Component {
     );
 
     // call : Smart Contract에서 상태를 변화시키지 않고 값만 불러온다
-    let pot = await this.lotteryContract.methods.getPot().call();
-    console.log(pot);
+    // let pot = await this.lotteryContract.methods.getPot().call();
+    // console.log(pot);
 
-    let owner = await this.lotteryContract.methods.owner().call();
-    console.log(owner);
+    // let owner = await this.lotteryContract.methods.owner().call();
+    // console.log(owner);
+
+    getBetEvent = async () => {
+      const records = [];
+      let events = await this.lotteryContract.getPastEvents("BET", {
+        fromBlock: 0,
+        toBlock: "lastest",
+      });
+      console.log(events);
+    };
 
     bet = async () => {
       // nonce - 외부의 유저가 마음대로 사용할 수 없게끔
       let nonce = await this.web3.eth.getTransactionCount(this.account);
-      this.lotteryContract.methods
-        .betAndDistribute("0xcd")
-        .send({
-          from: this.accounts,
-          value: 5000000000000000,
-          gas: 300000,
-          nonce: nonce,
-        });
+      this.lotteryContract.methods.betAndDistribute("0xcd").send({
+        from: this.accounts,
+        value: 5000000000000000,
+        gas: 300000,
+        nonce: nonce,
+      });
     };
   };
   render() {
