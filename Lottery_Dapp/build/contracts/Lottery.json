@@ -214,13 +214,7 @@
       "constant": true,
       "inputs": [],
       "name": "answerForTest",
-      "outputs": [
-        {
-          "internalType": "bytes32",
-          "name": "",
-          "type": "bytes32"
-        }
-      ],
+      "outputs": [{ "internalType": "bytes32", "name": "", "type": "bytes32" }],
       "payable": false,
       "stateMutability": "view",
       "type": "function"
@@ -230,11 +224,7 @@
       "inputs": [],
       "name": "owner",
       "outputs": [
-        {
-          "internalType": "address payable",
-          "name": "",
-          "type": "address"
-        }
+        { "internalType": "address payable", "name": "", "type": "address" }
       ],
       "payable": false,
       "stateMutability": "view",
@@ -245,11 +235,7 @@
       "inputs": [],
       "name": "getPot",
       "outputs": [
-        {
-          "internalType": "uint256",
-          "name": "pot",
-          "type": "uint256"
-        }
+        { "internalType": "uint256", "name": "pot", "type": "uint256" }
       ],
       "payable": false,
       "stateMutability": "view",
@@ -267,20 +253,10 @@
     {
       "constant": false,
       "inputs": [
-        {
-          "internalType": "bytes32",
-          "name": "answer",
-          "type": "bytes32"
-        }
+        { "internalType": "bytes32", "name": "answer", "type": "bytes32" }
       ],
       "name": "setAnswerForTest",
-      "outputs": [
-        {
-          "internalType": "bool",
-          "name": "result",
-          "type": "bool"
-        }
-      ],
+      "outputs": [{ "internalType": "bool", "name": "result", "type": "bool" }],
       "payable": false,
       "stateMutability": "nonpayable",
       "type": "function"
@@ -288,16 +264,8 @@
     {
       "constant": true,
       "inputs": [
-        {
-          "internalType": "bytes32",
-          "name": "challenges",
-          "type": "bytes32"
-        },
-        {
-          "internalType": "bytes32",
-          "name": "answer",
-          "type": "bytes32"
-        }
+        { "internalType": "bytes32", "name": "challenges", "type": "bytes32" },
+        { "internalType": "bytes32", "name": "answer", "type": "bytes32" }
       ],
       "name": "isMatch",
       "outputs": [
@@ -314,11 +282,7 @@
     {
       "constant": true,
       "inputs": [
-        {
-          "internalType": "uint256",
-          "name": "index",
-          "type": "uint256"
-        }
+        { "internalType": "uint256", "name": "index", "type": "uint256" }
       ],
       "name": "getBetInfo",
       "outputs": [
@@ -327,16 +291,8 @@
           "name": "answerBlockNumber",
           "type": "uint256"
         },
-        {
-          "internalType": "address",
-          "name": "bettor",
-          "type": "address"
-        },
-        {
-          "internalType": "bytes32",
-          "name": "challenges",
-          "type": "bytes32"
-        }
+        { "internalType": "address", "name": "bettor", "type": "address" },
+        { "internalType": "bytes32", "name": "challenges", "type": "bytes32" }
       ],
       "payable": false,
       "stateMutability": "view",
@@ -348,29 +304,17 @@
   "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061007d5760003560e01c806384f7e4f01161005b57806384f7e4f0146101625780638da5cb5b14610180578063c79f3804146101ca578063e4fc6b6d146102245761007d565b8063403c9fa8146100825780637009fa36146100a057806379141f80146100e6575b600080fd5b61008a61022e565b6040518082815260200191505060405180910390f35b6100cc600480360360208110156100b657600080fd5b8101908080359060200190929190505050610238565b604051808215151515815260200191505060405180910390f35b610112600480360360208110156100fc57600080fd5b81019080803590602001909291905050506102ef565b604051808481526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001828152602001935050505060405180910390f35b61016a6103a3565b6040518082815260200191505060405180910390f35b6101886103a9565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b610200600480360360408110156101e057600080fd5b8101908080359060200190929190803590602001909291905050506103ce565b6040518082600281111561021057fe5b60ff16815260200191505060405180910390f35b61022c6104cd565b005b6000600454905090565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16146102df576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252602b815260200180610bb8602b913960400191505060405180910390fd5b8160068190555060019050919050565b60008060006102fc610b7d565b60036000868152602001908152602001600020604051806060016040529081600082015481526020016001820160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020016002820154815250509050806000015193508060200151925080604001519150509193909250565b60065481565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60008083905060008490506000846000602081106103e857fe5b1a60f81b7effffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916905060008560006020811061041f57fe5b1a60f81b7effffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff19169050600484901c9350600484901b9350600482901c9150600482901b9150600483901c9250600483901b9250600481901c9050600481901b9050838214801561048d57508281145b1561049f5760019450505050506104c7565b838214806104ac57508281145b156104be5760029450505050506104c7565b60009450505050505b92915050565b6000806104d8610b7d565b60008060025494505b6001548510156109d75760036000868152602001908152602001600020604051806060016040529081600082015481526020016001820160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001600282015481525050925061058283600001516109e5565b91506000600281111561059157fe5b82600281111561059d57fe5b14156108d75760006105b28460000151610a35565b90506105c28460400151826103ce565b9150600160028111156105d157fe5b8260028111156105dd57fe5b14156106d0576105fc84602001516611c37937e0800060045401610a5d565b945060006004819055507fc4126c621d6137adc3f4ab7b1301a6b58700239f6cf061cc8d19570d8099cbc48685602001518787604001518560006020811061064057fe5b1a60f81b8960000151604051808781526020018673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001858152602001848152602001837effffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff19168152602001828152602001965050505050505060405180910390a15b600060028111156106dd57fe5b8260028111156106e957fe5b14156107d1576611c37937e080006004600082825401925050819055507f156b27674a9d3a434dcf3bbb68a2417fdccf15dab2f4882725b8d5d700aed766868560200151600087604001518560006020811061074157fe5b1a60f81b8960000151604051808781526020018673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001858152602001848152602001837effffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff19168152602001828152602001965050505050505060405180910390a15b600160028111156107de57fe5b8260028111156107ea57fe5b14156108d55761080984602001516611c37937e0800060045401610a5d565b94507f9a3b4dda21e9bbd860af21efdd349ea704d7240a0c6014190969285c906f974b8685602001518787604001518560006020811061084557fe5b1a60f81b8960000151604051808781526020018673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001858152602001848152602001837effffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff19168152602001828152602001965050505050505060405180910390a15b505b600160028111156108e457fe5b8260028111156108f057fe5b14156108fb576109d7565b60028081111561090757fe5b82600281111561091357fe5b14156109c05761092e83602001516611c37937e08000610a5d565b93507fa88a4c2d12ce24191a453a5f07147bdfe9495fcbb541f86e9f86bb858576c8b18584602001518686604001518760000151604051808681526020018573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018481526020018381526020018281526020019550505050505060405180910390a15b6109c985610b25565b5084806001019550506104e1565b846002819055505050505050565b600081431180156109f95750816101000143105b15610a075760009050610a30565b814311610a175760019050610a30565b61010082014310610a2b5760029050610a30565b600290505b919050565b6000600560009054906101000a900460ff16610a5357600654610a56565b81405b9050919050565b60008060009050600081840390508473ffffffffffffffffffffffffffffffffffffffff166108fc829081150290604051600060405180830381858888f19350505050158015610ab1573d6000803e3d6000fd5b506000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166108fc839081150290604051600060405180830381858888f19350505050158015610b19573d6000803e3d6000fd5b50809250505092915050565b6000600360008381526020019081526020016000206000808201600090556001820160006101000a81549073ffffffffffffffffffffffffffffffffffffffff02191690556002820160009055505060019050919050565b604051806060016040528060008152602001600073ffffffffffffffffffffffffffffffffffffffff16815260200160008019168152509056fe4f6e6c79206f776e65722063616e207365742074686520616e7377657220666f722074657374206d6f6465a265627a7a72315820d5cda3e684ece454179b7eb06269560090f3e00cc963e829906456f2200f04ab64736f6c63430005100032",
   "sourceMap": "66:8846:0:-;;;819:5;799:25;;;;;;;;;;;;;;;;;;;;1661:56;8:9:-1;5:2;;;30:1;27;20:12;5:2;1661:56:0;1700:10;1692:5;;:18;;;;;;;;;;;;;;;;;;66:8846;;;;;;",
   "deployedSourceMap": "66:8846:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;66:8846:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1723:235;;;:::i;:::-;;;;;;;;;;;;;;;;;;;6179:216;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;6179:216:0;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;8103:278;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;8103:278:0;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;879:28;;;:::i;:::-;;;;;;;;;;;;;;;;;;;275;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;6741:735;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;6741:735:0;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2771:2626;;;:::i;:::-;;1723:235;1762:11;1947:4;;1940:11;;1723:235;:::o;6179:216::-;6237:11;6282:5;;;;;;;;;;;6268:19;;:10;:19;;;6260:75;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;6361:6;6345:13;:22;;;;6384:4;6377:11;;6179:216;;;:::o;8103:278::-;8159:25;8186:14;8202:18;8232:16;;:::i;:::-;8251:5;:12;8257:5;8251:12;;;;;;;;;;;8232:31;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8293:1;:19;;;8273:39;;8331:1;:8;;;8322:17;;8362:1;:12;;;8349:25;;8103:278;;;;;;:::o;879:28::-;;;;:::o;275:::-;;;;;;;;;;;;;:::o;6741:735::-;6815:13;6906:10;6919;6906:23;;6939:10;6952;6939:23;;6973:10;6986:6;6993:1;6986:9;;;;;;;;;;6973:22;;;;;7005:10;7018:6;7025:1;7018:9;;;;;;;;;;7005:22;;;;;7077:1;7071:2;:7;;7066:12;;7099:1;7093:2;:7;;7088:12;;7122:1;7116:2;:7;;7111:12;;7144:1;7138:2;:7;;7133:12;;7196:1;7190:2;:7;;7185:12;;7218:1;7212:2;:7;;7207:12;;7241:1;7235:2;:7;;7230:12;;7263:1;7257:2;:7;;7252:12;;7284:2;7278;:8;:20;;;;;7296:2;7290;:8;7278:20;7275:74;;;7321:17;7314:24;;;;;;;;7275:74;7368:2;7362;:8;:20;;;;7380:2;7374;:8;7362:20;7359:75;;;7405:18;7398:25;;;;;;;;7359:75;7451:18;7444:25;;;;;;6741:735;;;;;:::o;2771:2626::-;2862:11;2883:22;2916:16;;:::i;:::-;2942:30;2982:34;3035:5;;3031:9;;3027:2343;3045:5;;3041:3;:9;3027:2343;;;3076:5;:10;3082:3;3076:10;;;;;;;;;;;3072:14;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;3121:35;3136:1;:19;;;3121:14;:35::i;:::-;3100:56;;3309:21;3287:43;;;;;;;;:18;:43;;;;;;;;;3284:1468;;;3350:23;3376:39;3395:1;:19;;;3376:18;:39::i;:::-;3350:65;;3456:38;3464:1;:12;;;3478:15;3456:7;:38::i;:::-;3433:61;;3583:17;3559:41;;;;;;;;:20;:41;;;;;;;;;3556:402;;;3677:51;3700:1;:8;;;713:12;3710:4;;:17;3677:22;:51::i;:::-;3660:68;;3789:1;3782:4;:8;;;;3850:89;3854:3;3859:1;:8;;;3869:14;3885:1;:12;;;3899:15;3915:1;3899:18;;;;;;;;;;3919:1;:19;;;3850:89;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;3556:402;4054:18;4030:42;;;;;;;;:20;:42;;;;;;;;;4027:290;;;713:12;4142:4;;:18;;;;;;;;;;;4221:77;4226:3;4231:1;:8;;;4241:1;4244;:12;;;4258:15;4274:1;4258:18;;;;;;;;;;4278:1;:19;;;4221:77;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;4027:290;4411:17;4387:41;;;;;;;;:20;:41;;;;;;;;;4384:354;;;4517:51;4540:1;:8;;;713:12;4550:4;;:17;4517:22;:51::i;:::-;4500:68;;4629:90;4634:3;4639:1;:8;;;4649:14;4665:1;:12;;;4679:15;4695:1;4679:18;;;;;;;;;;4699:1;:19;;;4629:90;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;4384:354;3284:1468;;4858:23;4836:45;;;;;;;;:18;:45;;;;;;;;;4833:88;;;4901:5;;4833:88;5046:28;5024:50;;;;;;;;:18;:50;;;;;;;;;5021:301;;;5137:44;5160:1;:8;;;713:12;5137:22;:44::i;:::-;5120:61;;5235:72;5242:3;5247:1;:8;;;5257:14;5273:1;:12;;;5287:1;:19;;;5235:72;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;5021:301;5348:11;5355:3;5348:6;:11::i;:::-;;3051:5;;;;;;;3027:2343;;;5387:3;5379:5;:11;;;;2771:2626;;;;;:::o;7482:514::-;7556:11;7597:17;7582:12;:32;:82;;;;;7647:17;513:3;7633:31;7618:12;:46;7582:82;7579:140;;;7687:21;7680:28;;;;7579:140;7748:17;7732:12;:33;7729:93;;7788:23;7781:30;;;;7729:93;513:3;7851:17;:31;7835:12;:47;7832:112;;7905:28;7898:35;;;;7832:112;7961:28;7954:35;;7482:514;;;;:::o;6401:169::-;6479:14;6512:4;;;;;;;;;;;:51;;6550:13;;6512:51;;;6529:17;6519:28;6512:51;6505:58;;6401:169;;;:::o;5402:771::-;5490:7;5557:11;5571:1;5557:15;;5582:24;5618:3;5609:6;:12;5582:39;;5660:4;:13;;:31;5674:16;5660:31;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;5660:31:0;5731:5;;;;;;;;;;;:14;;:19;5746:3;5731:19;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;5731:19:0;6150:16;6143:23;;;;5402:771;;;;:::o;8684:226::-;8733:4;8869:5;:12;8875:5;8869:12;;;;;;;;;;;;8862:19;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8899:4;8892:11;;8684:226;;;:::o;66:8846::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
-  "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.4.22 <0.9.0;\n\ncontract Lottery {\n    \n    struct BetInfo {\n        uint256 answerBlockNumber;\n        // 맞춘 사람에게 돈을 보내줘야 한다\n        address payable bettor;\n        bytes32 challenges;\n    }\n\n    address payable public owner;\n\n    // 도메인 설계!!\n    uint256 private _tail;\n    uint256 private _head;\n    mapping (uint => BetInfo) private _bets;\n\n    // 블록 개수 제한 = 256개\n    uint256 constant internal BLOCK_LIMIT = 256;\n\n    // Block 간격은 3개이다\n    uint256 constant internal BET_BLOCK_INTERVAL = 3;\n\n    // 0.005 ETH = 5 * 10 ** 15 WEI, 5 ETH = 5 * 10 ** 18 WEI\n    uint256 constant internal BET_AMOUNT = 5 * 10 ** 15;\n\n    // 팟머니 모아둘 공간 필요\n    uint256 private _pot;\n    bool private mode = false; // false : test mode, true : use real block hash\n    bytes32 public answerForTest;\n\n    enum BlockStatus{checkable, NotRevealed, BlockLimitPassed}\n    enum BettingResult{Fail, Win, Draw}\n\n    event BET(uint256 index, address bettor, uint256 amount, bytes32 challenges, uint256 answerBlockNumber);\n    event WIN(uint256 index, address bettor, uint256 amount, bytes32 challenges, bytes32 answer, uint256 answerBlockNumber);\n    event FAIL(uint256 index, address bettor, uint256 amount, bytes32 challenges, bytes32 answer, uint256 answerBlockNumber);\n    event DRAW(uint256 index, address bettor, uint256 amount, bytes32 challenges, bytes32 answer, uint256 answerBlockNumber);\n    event REFUND(uint256 index, address bettor, uint256 amount, bytes32 challenges, uint256 answerBlockNumber);\n    // 가장 처음 배포가 되는 함수\n    constructor() public {\n        owner = msg.sender;\n    }\n\n    function getPot() public view returns (uint256 pot) {\n        // _pot에 있는 돈을 bettor의 address에 전송\n        // smart contract의 변수를 줘야 하는 수식어는 view가 들어가야 한다\n        return _pot;\n    }\n\n    // Bet\n\n      // queue에서 bet 정보를 확인하고 돈이 제대로 들어왔는지도 확인\n      // Save the bet to queue\n\n    function bet(bytes32 challenges) internal returns (bool result) {\n        // Check the proper ether is sent\n        require(msg.value == BET_AMOUNT, \"Not enough ETH\");\n\n        // Push bet to the queue\n        require(pushBet(challenges), \"Fail to add a new Bet Info\");\n\n        // Emit event\n        emit BET(_tail - 1, msg.sender, msg.value, challenges, block.number + BET_BLOCK_INTERVAL);\n\n        return true;\n    }\n    /**\n    * @dev 베팅 결과값을 확인 하고 팟머니를 분배한다.\n    * 정답 실패 : 팟머니 축적, 정답 맞춤 : 팟머니 획득, 한 글자 맞춤 or 정답 확인 불가 : 베팅 금액만 획득\n     */\n    // Distribute\n    function distribute() public {\n        // head 3 4 5 6 7 8 9 10 11 12 tail - queue\n        uint256 cur;\n        uint256 transferAmount;\n\n        BetInfo memory b;\n        BlockStatus currentBlockStatus;\n        BettingResult currentBettingResult;\n\n        for(cur=_head;cur<_tail;cur++) {\n            b = _bets[cur];\n            currentBlockStatus = getBlockStatus(b.answerBlockNumber);\n\n            // 1. Checkable : block.number > answerBlockNumber && block.number < BLOCK_LIMIT + answerBlockNumber\n            if(currentBlockStatus == BlockStatus.checkable) {\n                bytes32 answerBlockHash = getAnswerBlockHash(b.answerBlockNumber);\n                currentBettingResult = isMatch(b.challenges, answerBlockHash);\n\n                // if win, bettor gets pot\n                if(currentBettingResult == BettingResult.Win) {\n                    // transfer pot\n                    transferAmount = transferAfterPayingFee(b.bettor, _pot + BET_AMOUNT);\n\n                    // pot = 0\n                    _pot = 0;\n\n                    // emit WIN\n                    emit WIN(cur, b.bettor, transferAmount, b.challenges, answerBlockHash[0], b.answerBlockNumber);\n                }\n                // if fail, bettor's money goes pot\n                if(currentBettingResult == BettingResult.Fail) {\n                    // pot = pot + BET_AMOUNT\n                    _pot += BET_AMOUNT;\n\n                    // emit FAIL\n                    emit FAIL(cur, b.bettor, 0, b.challenges, answerBlockHash[0], b.answerBlockNumber);\n                }\n                // if draw, refund bettor's money\n                if(currentBettingResult == BettingResult.Win) {\n                    // transfer only BET_AMOUNT\n                    transferAmount = transferAfterPayingFee(b.bettor, _pot + BET_AMOUNT);\n\n                    // emit DRAW\n                    emit DRAW(cur, b.bettor, transferAmount, b.challenges, answerBlockHash[0], b.answerBlockNumber);\n                }\n            }\n\n            // 2. Not Revealed : block.number <= answerBlockNumber\n            if(currentBlockStatus == BlockStatus.NotRevealed) {\n                break;\n            }\n            // 3. Block Limit Passed : block.number >= answerBlockNumber + BLOCK_LIMIT\n            if(currentBlockStatus == BlockStatus.BlockLimitPassed) {\n                // refund\n                transferAmount = transferAfterPayingFee(b.bettor, BET_AMOUNT);\n                // emit refund\n                emit REFUND(cur, b.bettor, transferAmount, b.challenges, b.answerBlockNumber);\n            }\n            \n            popBet(cur);\n        }\n        _head = cur;\n    }\n    function transferAfterPayingFee(address payable addr, uint256 amount) internal returns (uint256) {\n        \n        // uint256 fee = amount / 100;\n        uint256 fee = 0;\n        uint256 amountWithoutFee = amount - fee;\n\n        // transfer to addr\n        addr.transfer(amountWithoutFee);\n\n        // transfer to owner\n        owner.transfer(fee);\n\n        // 이더를 전송하는 방법 3가지 \n        // -> call(단순히 이더보내는 것 뿐만 아니라 다른 S.C에 특정 Function 호출할 때 사용, 되도록 이더 전송 때는 사용 노노)\n        // -> send(실패하면 False로 Return)\n        // -> transfer(딱 이더만 던져주고 실패하면 S.C 자체를 Fail 시켜버린다 = 가장 안정적)\n\n        return amountWithoutFee;\n    }\n\n    function setAnswerForTest(bytes32 answer) public returns (bool result) {\n        require(msg.sender == owner, \"Only owner can set the answer for test mode\");\n        answerForTest = answer;\n        return true;\n    }\n\n    function getAnswerBlockHash(uint256 answerBlockNumber) internal view returns (bytes32 answer) {\n        return mode ? blockhash(answerBlockNumber) : answerForTest;\n    }\n\n    /**\n    * @dev 베팅글자와 정답을 확인한다\n    * @param challenges 베팅 글자\n    * @param answer 블럭 해쉬\n    * @return 정답결과\n     */\n    function isMatch(bytes32 challenges, bytes32 answer) public pure returns (BettingResult) {\n        // challenges 0xab\n        // answer 0xab... ff 32 bytes\n\n        bytes32 c1 = challenges;\n        bytes32 c2 = challenges;\n\n        bytes32 a1 = answer[0];\n        bytes32 a2 = answer[0];\n\n        // Get First Number\n        c1 = c1 >> 4;\n        c1 = c1 << 4;\n\n        a1 = a1 >> 4;\n        a1 = a1 << 4;\n\n        // Get Second Number\n        c2 = c2 >> 4;\n        c2 = c2 << 4;\n\n        a2 = a2 >> 4;\n        a2 = a2 << 4;\n\n        if(a1 == c1 && a2 == c2) {\n            return BettingResult.Win;\n        }\n\n        if(a1 == c1 || a2 == c2) {\n            return BettingResult.Draw;\n        }\n\n        return BettingResult.Fail;\n    }\n\n    function getBlockStatus(uint256 answerBlockNumber) internal view returns (BlockStatus) {\n        if(block.number > answerBlockNumber && block.number < BLOCK_LIMIT + answerBlockNumber) {\n            return BlockStatus.checkable;\n        }\n\n        if(block.number <= answerBlockNumber) {\n            return BlockStatus.NotRevealed;\n        }\n\n        if(block.number >= answerBlockNumber + BLOCK_LIMIT) {\n            return BlockStatus.BlockLimitPassed;\n        }\n\n        return BlockStatus.BlockLimitPassed;\n    }\n      // Check the answer\n      // 맞으면 돈 다 주고 틀리면 돈 가져가는 판단 필요\n\n    function getBetInfo(uint256 index) public view returns (uint256 answerBlockNumber, address bettor, bytes32 challenges) {\n        BetInfo memory b = _bets[index];\n        answerBlockNumber = b.answerBlockNumber;\n        bettor = b.bettor;\n        challenges = b.challenges;\n    }\n\n    function pushBet(bytes32 challenges) internal returns (bool) {\n        BetInfo memory b;\n        b.bettor = msg.sender;\n        b.answerBlockNumber = block.number + BET_BLOCK_INTERVAL;\n        b.challenges = challenges;\n\n        _bets[_tail] = b;\n        _tail++;\n\n        return true;\n    }\n\n    function popBet(uint256 index) internal returns (bool) {\n        // delete: 값을 초기화해서 Gas를 돌려받는다 = 데이터를 더이상 저장하지 않는다\n        delete _bets[index];\n\n        return true;\n    }\n}\n\n// Dapp 설계 방법\n// 1. 지갑 관리 - Hot Wallet & Cold Wallet\n// 2. 아키텍쳐 a. smart contract - front (Data를 모두 s.c에 넣으면 유연하게 대처 X)\n//           b. smart contract - server - front (중요도에 따라 DB를 나눠서 저장할 수 있다)\n// 3. Code a. 코드 실행하는 데 돈이 든다 (디도스 공격 막을 수 있다)\n//         b. 권한 관리\n//         c. 비즈니스 로직 업데이트 (s.c의 단점 중 하나: 업데이트)\n//         d. Data Migration\n// 4. 운영 a. public - test.net -> main.net\n//        b. private\n\n",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.4.22 <0.9.0;\n\ncontract Lottery {\n \n struct BetInfo {\n uint256 answerBlockNumber;\n // 맞춘 사람에게 돈을 보내줘야 한다\n address payable bettor;\n bytes32 challenges;\n }\n\n address payable public owner;\n\n // 도메인 설계!!\n uint256 private _tail;\n uint256 private _head;\n mapping (uint => BetInfo) private _bets;\n\n // 블록 개수 제한 = 256개\n uint256 constant internal BLOCK_LIMIT = 256;\n\n // Block 간격은 3개이다\n uint256 constant internal BET_BLOCK_INTERVAL = 3;\n\n // 0.005 ETH = 5 * 10 ** 15 WEI, 5 ETH = 5 * 10 ** 18 WEI\n uint256 constant internal BET_AMOUNT = 5 * 10 ** 15;\n\n // 팟머니 모아둘 공간 필요\n uint256 private _pot;\n bool private mode = false; // false : test mode, true : use real block hash\n bytes32 public answerForTest;\n\n enum BlockStatus{checkable, NotRevealed, BlockLimitPassed}\n enum BettingResult{Fail, Win, Draw}\n\n event BET(uint256 index, address bettor, uint256 amount, bytes32 challenges, uint256 answerBlockNumber);\n event WIN(uint256 index, address bettor, uint256 amount, bytes32 challenges, bytes32 answer, uint256 answerBlockNumber);\n event FAIL(uint256 index, address bettor, uint256 amount, bytes32 challenges, bytes32 answer, uint256 answerBlockNumber);\n event DRAW(uint256 index, address bettor, uint256 amount, bytes32 challenges, bytes32 answer, uint256 answerBlockNumber);\n event REFUND(uint256 index, address bettor, uint256 amount, bytes32 challenges, uint256 answerBlockNumber);\n // 가장 처음 배포가 되는 함수\n constructor() public {\n owner = msg.sender;\n }\n\n function getPot() public view returns (uint256 pot) {\n // _pot에 있는 돈을 bettor의 address에 전송\n // smart contract의 변수를 줘야 하는 수식어는 view가 들어가야 한다\n return _pot;\n }\n\n // Bet\n\n // queue에서 bet 정보를 확인하고 돈이 제대로 들어왔는지도 확인\n // Save the bet to queue\n\n function bet(bytes32 challenges) internal returns (bool result) {\n // Check the proper ether is sent\n require(msg.value == BET_AMOUNT, \"Not enough ETH\");\n\n // Push bet to the queue\n require(pushBet(challenges), \"Fail to add a new Bet Info\");\n\n // Emit event\n emit BET(_tail - 1, msg.sender, msg.value, challenges, block.number + BET_BLOCK_INTERVAL);\n\n return true;\n }\n /**\n * @dev 베팅 결과값을 확인 하고 팟머니를 분배한다.\n * 정답 실패 : 팟머니 축적, 정답 맞춤 : 팟머니 획득, 한 글자 맞춤 or 정답 확인 불가 : 베팅 금액만 획득\n */\n // Distribute\n function distribute() public {\n // head 3 4 5 6 7 8 9 10 11 12 tail - queue\n uint256 cur;\n uint256 transferAmount;\n\n BetInfo memory b;\n BlockStatus currentBlockStatus;\n BettingResult currentBettingResult;\n\n for(cur=_head;cur<_tail;cur++) {\n b = _bets[cur];\n currentBlockStatus = getBlockStatus(b.answerBlockNumber);\n\n // 1. Checkable : block.number > answerBlockNumber && block.number < BLOCK_LIMIT + answerBlockNumber\n if(currentBlockStatus == BlockStatus.checkable) {\n bytes32 answerBlockHash = getAnswerBlockHash(b.answerBlockNumber);\n currentBettingResult = isMatch(b.challenges, answerBlockHash);\n\n // if win, bettor gets pot\n if(currentBettingResult == BettingResult.Win) {\n // transfer pot\n transferAmount = transferAfterPayingFee(b.bettor, _pot + BET_AMOUNT);\n\n // pot = 0\n _pot = 0;\n\n // emit WIN\n emit WIN(cur, b.bettor, transferAmount, b.challenges, answerBlockHash[0], b.answerBlockNumber);\n }\n // if fail, bettor's money goes pot\n if(currentBettingResult == BettingResult.Fail) {\n // pot = pot + BET_AMOUNT\n _pot += BET_AMOUNT;\n\n // emit FAIL\n emit FAIL(cur, b.bettor, 0, b.challenges, answerBlockHash[0], b.answerBlockNumber);\n }\n // if draw, refund bettor's money\n if(currentBettingResult == BettingResult.Win) {\n // transfer only BET_AMOUNT\n transferAmount = transferAfterPayingFee(b.bettor, _pot + BET_AMOUNT);\n\n // emit DRAW\n emit DRAW(cur, b.bettor, transferAmount, b.challenges, answerBlockHash[0], b.answerBlockNumber);\n }\n }\n\n // 2. Not Revealed : block.number <= answerBlockNumber\n if(currentBlockStatus == BlockStatus.NotRevealed) {\n break;\n }\n // 3. Block Limit Passed : block.number >= answerBlockNumber + BLOCK_LIMIT\n if(currentBlockStatus == BlockStatus.BlockLimitPassed) {\n // refund\n transferAmount = transferAfterPayingFee(b.bettor, BET_AMOUNT);\n // emit refund\n emit REFUND(cur, b.bettor, transferAmount, b.challenges, b.answerBlockNumber);\n }\n \n popBet(cur);\n }\n _head = cur;\n }\n function transferAfterPayingFee(address payable addr, uint256 amount) internal returns (uint256) {\n \n // uint256 fee = amount / 100;\n uint256 fee = 0;\n uint256 amountWithoutFee = amount - fee;\n\n // transfer to addr\n addr.transfer(amountWithoutFee);\n\n // transfer to owner\n owner.transfer(fee);\n\n // 이더를 전송하는 방법 3가지 \n // -> call(단순히 이더보내는 것 뿐만 아니라 다른 S.C에 특정 Function 호출할 때 사용, 되도록 이더 전송 때는 사용 노노)\n // -> send(실패하면 False로 Return)\n // -> transfer(딱 이더만 던져주고 실패하면 S.C 자체를 Fail 시켜버린다 = 가장 안정적)\n\n return amountWithoutFee;\n }\n\n function setAnswerForTest(bytes32 answer) public returns (bool result) {\n require(msg.sender == owner, \"Only owner can set the answer for test mode\");\n answerForTest = answer;\n return true;\n }\n\n function getAnswerBlockHash(uint256 answerBlockNumber) internal view returns (bytes32 answer) {\n return mode ? blockhash(answerBlockNumber) : answerForTest;\n }\n\n /**\n * @dev 베팅글자와 정답을 확인한다\n * @param challenges 베팅 글자\n * @param answer 블럭 해쉬\n * @return 정답결과\n */\n function isMatch(bytes32 challenges, bytes32 answer) public pure returns (BettingResult) {\n // challenges 0xab\n // answer 0xab... ff 32 bytes\n\n bytes32 c1 = challenges;\n bytes32 c2 = challenges;\n\n bytes32 a1 = answer[0];\n bytes32 a2 = answer[0];\n\n // Get First Number\n c1 = c1 >> 4;\n c1 = c1 << 4;\n\n a1 = a1 >> 4;\n a1 = a1 << 4;\n\n // Get Second Number\n c2 = c2 >> 4;\n c2 = c2 << 4;\n\n a2 = a2 >> 4;\n a2 = a2 << 4;\n\n if(a1 == c1 && a2 == c2) {\n return BettingResult.Win;\n }\n\n if(a1 == c1 || a2 == c2) {\n return BettingResult.Draw;\n }\n\n return BettingResult.Fail;\n }\n\n function getBlockStatus(uint256 answerBlockNumber) internal view returns (BlockStatus) {\n if(block.number > answerBlockNumber && block.number < BLOCK_LIMIT + answerBlockNumber) {\n return BlockStatus.checkable;\n }\n\n if(block.number <= answerBlockNumber) {\n return BlockStatus.NotRevealed;\n }\n\n if(block.number >= answerBlockNumber + BLOCK_LIMIT) {\n return BlockStatus.BlockLimitPassed;\n }\n\n return BlockStatus.BlockLimitPassed;\n }\n // Check the answer\n // 맞으면 돈 다 주고 틀리면 돈 가져가는 판단 필요\n\n function getBetInfo(uint256 index) public view returns (uint256 answerBlockNumber, address bettor, bytes32 challenges) {\n BetInfo memory b = _bets[index];\n answerBlockNumber = b.answerBlockNumber;\n bettor = b.bettor;\n challenges = b.challenges;\n }\n\n function pushBet(bytes32 challenges) internal returns (bool) {\n BetInfo memory b;\n b.bettor = msg.sender;\n b.answerBlockNumber = block.number + BET_BLOCK_INTERVAL;\n b.challenges = challenges;\n\n _bets[_tail] = b;\n _tail++;\n\n return true;\n }\n\n function popBet(uint256 index) internal returns (bool) {\n // delete: 값을 초기화해서 Gas를 돌려받는다 = 데이터를 더이상 저장하지 않는다\n delete _bets[index];\n\n return true;\n }\n}\n\n// Dapp 설계 방법\n// 1. 지갑 관리 - Hot Wallet & Cold Wallet\n// 2. 아키텍쳐 a. smart contract - front (Data를 모두 s.c에 넣으면 유연하게 대처 X)\n// b. smart contract - server - front (중요도에 따라 DB를 나눠서 저장할 수 있다)\n// 3. Code a. 코드 실행하는 데 돈이 든다 (디도스 공격 막을 수 있다)\n// b. 권한 관리\n// c. 비즈니스 로직 업데이트 (s.c의 단점 중 하나: 업데이트)\n// d. Data Migration\n// 4. 운영 a. public - test.net -> main.net\n// b. private\n\n",
   "sourcePath": "/Users/chugyohyeon/Desktop/Developer/Blockchain_Ethereum_Study/Lottery_Dapp/contracts/Lottery.sol",
   "ast": {
     "absolutePath": "project:/contracts/Lottery.sol",
-    "exportedSymbols": {
-      "Lottery": [
-        678
-      ]
-    },
+    "exportedSymbols": { "Lottery": [678] },
     "id": 679,
     "nodeType": "SourceUnit",
     "nodes": [
       {
         "id": 1,
-        "literals": [
-          "solidity",
-          ">=",
-          "0.4",
-          ".22",
-          "<",
-          "0.9",
-          ".0"
-        ],
+        "literals": ["solidity", ">=", "0.4", ".22", "<", "0.9", ".0"],
         "nodeType": "PragmaDirective",
         "src": "32:32:0"
       },
@@ -381,9 +325,7 @@
         "documentation": null,
         "fullyImplemented": true,
         "id": 678,
-        "linearizedBaseContracts": [
-          678
-        ],
+        "linearizedBaseContracts": [678],
         "name": "Lottery",
         "nodeType": "ContractDefinition",
         "nodes": [
@@ -2057,10 +1999,7 @@
                     ],
                     "expression": {
                       "argumentTypes": [
-                        {
-                          "typeIdentifier": "t_bool",
-                          "typeString": "bool"
-                        },
+                        { "typeIdentifier": "t_bool", "typeString": "bool" },
                         {
                           "typeIdentifier": "t_stringliteral_925c65e5afd6e15026c7913a58afd06aa075fa7eb9a54f41f4ea0ad9a832202a",
                           "typeString": "literal_string \"Not enough ETH\""
@@ -2069,10 +2008,7 @@
                       "id": 136,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        696,
-                        697
-                      ],
+                      "overloadedDeclarations": [696, 697],
                       "referencedDeclaration": 697,
                       "src": "2215:7:0",
                       "typeDescriptions": {
@@ -2172,10 +2108,7 @@
                     ],
                     "expression": {
                       "argumentTypes": [
-                        {
-                          "typeIdentifier": "t_bool",
-                          "typeString": "bool"
-                        },
+                        { "typeIdentifier": "t_bool", "typeString": "bool" },
                         {
                           "typeIdentifier": "t_stringliteral_da01b0706cf8357afc3506e13763432e42558cd907b49ba00ba770cd6d10e27e",
                           "typeString": "literal_string \"Fail to add a new Bet Info\""
@@ -2184,10 +2117,7 @@
                       "id": 144,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        696,
-                        697
-                      ],
+                      "overloadedDeclarations": [696, 697],
                       "referencedDeclaration": 697,
                       "src": "2309:7:0",
                       "typeDescriptions": {
@@ -2564,9 +2494,7 @@
               "src": "2800:2597:0",
               "statements": [
                 {
-                  "assignments": [
-                    173
-                  ],
+                  "assignments": [173],
                   "declarations": [
                     {
                       "constant": false,
@@ -2601,9 +2529,7 @@
                   "src": "2862:11:0"
                 },
                 {
-                  "assignments": [
-                    176
-                  ],
+                  "assignments": [176],
                   "declarations": [
                     {
                       "constant": false,
@@ -2638,9 +2564,7 @@
                   "src": "2883:22:0"
                 },
                 {
-                  "assignments": [
-                    179
-                  ],
+                  "assignments": [179],
                   "declarations": [
                     {
                       "constant": false,
@@ -2677,9 +2601,7 @@
                   "src": "2916:16:0"
                 },
                 {
-                  "assignments": [
-                    182
-                  ],
+                  "assignments": [182],
                   "declarations": [
                     {
                       "constant": false,
@@ -2716,9 +2638,7 @@
                   "src": "2942:30:0"
                 },
                 {
-                  "assignments": [
-                    185
-                  ],
+                  "assignments": [185],
                   "declarations": [
                     {
                       "constant": false,
@@ -3003,9 +2923,7 @@
                           "src": "3332:1420:0",
                           "statements": [
                             {
-                              "assignments": [
-                                215
-                              ],
+                              "assignments": [215],
                               "declarations": [
                                 {
                                   "constant": false,
@@ -5199,9 +5117,7 @@
               "src": "5499:674:0",
               "statements": [
                 {
-                  "assignments": [
-                    372
-                  ],
+                  "assignments": [372],
                   "declarations": [
                     {
                       "constant": false,
@@ -5253,9 +5169,7 @@
                   "src": "5557:15:0"
                 },
                 {
-                  "assignments": [
-                    376
-                  ],
+                  "assignments": [376],
                   "declarations": [
                     {
                       "constant": false,
@@ -5692,10 +5606,7 @@
                     ],
                     "expression": {
                       "argumentTypes": [
-                        {
-                          "typeIdentifier": "t_bool",
-                          "typeString": "bool"
-                        },
+                        { "typeIdentifier": "t_bool", "typeString": "bool" },
                         {
                           "typeIdentifier": "t_stringliteral_8d67c14aea84102677cd530c21859455ea92546f467178469d07089224cc4cb3",
                           "typeString": "literal_string \"Only owner can set the answer for test mode\""
@@ -5704,10 +5615,7 @@
                       "id": 403,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        696,
-                        697
-                      ],
+                      "overloadedDeclarations": [696, 697],
                       "referencedDeclaration": 697,
                       "src": "6260:7:0",
                       "typeDescriptions": {
@@ -6073,9 +5981,7 @@
               "src": "6830:646:0",
               "statements": [
                 {
-                  "assignments": [
-                    443
-                  ],
+                  "assignments": [443],
                   "declarations": [
                     {
                       "constant": false,
@@ -6122,9 +6028,7 @@
                   "src": "6906:23:0"
                 },
                 {
-                  "assignments": [
-                    447
-                  ],
+                  "assignments": [447],
                   "declarations": [
                     {
                       "constant": false,
@@ -6171,9 +6075,7 @@
                   "src": "6939:23:0"
                 },
                 {
-                  "assignments": [
-                    451
-                  ],
+                  "assignments": [451],
                   "declarations": [
                     {
                       "constant": false,
@@ -6252,9 +6154,7 @@
                   "src": "6973:22:0"
                 },
                 {
-                  "assignments": [
-                    457
-                  ],
+                  "assignments": [457],
                   "declarations": [
                     {
                       "constant": false,
@@ -8056,9 +7956,7 @@
               "src": "8222:159:0",
               "statements": [
                 {
-                  "assignments": [
-                    597
-                  ],
+                  "assignments": [597],
                   "declarations": [
                     {
                       "constant": false,
@@ -8460,9 +8358,7 @@
               "src": "8448:230:0",
               "statements": [
                 {
-                  "assignments": [
-                    626
-                  ],
+                  "assignments": [626],
                   "declarations": [
                     {
                       "constant": false,
@@ -9142,24 +9038,12 @@
   "legacyAST": {
     "attributes": {
       "absolutePath": "project:/contracts/Lottery.sol",
-      "exportedSymbols": {
-        "Lottery": [
-          678
-        ]
-      }
+      "exportedSymbols": { "Lottery": [678] }
     },
     "children": [
       {
         "attributes": {
-          "literals": [
-            "solidity",
-            ">=",
-            "0.4",
-            ".22",
-            "<",
-            "0.9",
-            ".0"
-          ]
+          "literals": ["solidity", ">=", "0.4", ".22", "<", "0.9", ".0"]
         },
         "id": 1,
         "name": "PragmaDirective",
@@ -9167,18 +9051,12 @@
       },
       {
         "attributes": {
-          "baseContracts": [
-            null
-          ],
-          "contractDependencies": [
-            null
-          ],
+          "baseContracts": [null],
+          "contractDependencies": [null],
           "contractKind": "contract",
           "documentation": null,
           "fullyImplemented": true,
-          "linearizedBaseContracts": [
-            678
-          ],
+          "linearizedBaseContracts": [678],
           "name": "Lottery",
           "scope": 679
         },
@@ -9204,10 +9082,7 @@
                 },
                 "children": [
                   {
-                    "attributes": {
-                      "name": "uint256",
-                      "type": "uint256"
-                    },
+                    "attributes": { "name": "uint256", "type": "uint256" },
                     "id": 2,
                     "name": "ElementaryTypeName",
                     "src": "119:7:0"
@@ -9257,10 +9132,7 @@
                 },
                 "children": [
                   {
-                    "attributes": {
-                      "name": "bytes32",
-                      "type": "bytes32"
-                    },
+                    "attributes": { "name": "bytes32", "type": "bytes32" },
                     "id": 6,
                     "name": "ElementaryTypeName",
                     "src": "244:7:0"
@@ -9315,10 +9187,7 @@
             },
             "children": [
               {
-                "attributes": {
-                  "name": "uint256",
-                  "type": "uint256"
-                },
+                "attributes": { "name": "uint256", "type": "uint256" },
                 "id": 11,
                 "name": "ElementaryTypeName",
                 "src": "336:7:0"
@@ -9341,10 +9210,7 @@
             },
             "children": [
               {
-                "attributes": {
-                  "name": "uint256",
-                  "type": "uint256"
-                },
+                "attributes": { "name": "uint256", "type": "uint256" },
                 "id": 13,
                 "name": "ElementaryTypeName",
                 "src": "363:7:0"
@@ -9372,10 +9238,7 @@
                 },
                 "children": [
                   {
-                    "attributes": {
-                      "name": "uint",
-                      "type": "uint256"
-                    },
+                    "attributes": { "name": "uint", "type": "uint256" },
                     "id": 15,
                     "name": "ElementaryTypeName",
                     "src": "399:4:0"
@@ -9413,10 +9276,7 @@
             },
             "children": [
               {
-                "attributes": {
-                  "name": "uint256",
-                  "type": "uint256"
-                },
+                "attributes": { "name": "uint256", "type": "uint256" },
                 "id": 19,
                 "name": "ElementaryTypeName",
                 "src": "473:7:0"
@@ -9455,10 +9315,7 @@
             },
             "children": [
               {
-                "attributes": {
-                  "name": "uint256",
-                  "type": "uint256"
-                },
+                "attributes": { "name": "uint256", "type": "uint256" },
                 "id": 22,
                 "name": "ElementaryTypeName",
                 "src": "557:7:0"
@@ -9497,10 +9354,7 @@
             },
             "children": [
               {
-                "attributes": {
-                  "name": "uint256",
-                  "type": "uint256"
-                },
+                "attributes": { "name": "uint256", "type": "uint256" },
                 "id": 25,
                 "name": "ElementaryTypeName",
                 "src": "674:7:0"
@@ -9614,10 +9468,7 @@
             },
             "children": [
               {
-                "attributes": {
-                  "name": "uint256",
-                  "type": "uint256"
-                },
+                "attributes": { "name": "uint256", "type": "uint256" },
                 "id": 32,
                 "name": "ElementaryTypeName",
                 "src": "773:7:0"
@@ -9639,10 +9490,7 @@
             },
             "children": [
               {
-                "attributes": {
-                  "name": "bool",
-                  "type": "bool"
-                },
+                "attributes": { "name": "bool", "type": "bool" },
                 "id": 34,
                 "name": "ElementaryTypeName",
                 "src": "799:4:0"
@@ -9682,10 +9530,7 @@
             },
             "children": [
               {
-                "attributes": {
-                  "name": "bytes32",
-                  "type": "bytes32"
-                },
+                "attributes": { "name": "bytes32", "type": "bytes32" },
                 "id": 37,
                 "name": "ElementaryTypeName",
                 "src": "879:7:0"
@@ -9702,25 +9547,19 @@
             },
             "children": [
               {
-                "attributes": {
-                  "name": "checkable"
-                },
+                "attributes": { "name": "checkable" },
                 "id": 39,
                 "name": "EnumValue",
                 "src": "931:9:0"
               },
               {
-                "attributes": {
-                  "name": "NotRevealed"
-                },
+                "attributes": { "name": "NotRevealed" },
                 "id": 40,
                 "name": "EnumValue",
                 "src": "942:11:0"
               },
               {
-                "attributes": {
-                  "name": "BlockLimitPassed"
-                },
+                "attributes": { "name": "BlockLimitPassed" },
                 "id": 41,
                 "name": "EnumValue",
                 "src": "955:16:0"
@@ -9737,25 +9576,19 @@
             },
             "children": [
               {
-                "attributes": {
-                  "name": "Fail"
-                },
+                "attributes": { "name": "Fail" },
                 "id": 43,
                 "name": "EnumValue",
                 "src": "996:4:0"
               },
               {
-                "attributes": {
-                  "name": "Win"
-                },
+                "attributes": { "name": "Win" },
                 "id": 44,
                 "name": "EnumValue",
                 "src": "1002:3:0"
               },
               {
-                "attributes": {
-                  "name": "Draw"
-                },
+                "attributes": { "name": "Draw" },
                 "id": 45,
                 "name": "EnumValue",
                 "src": "1007:4:0"
@@ -9788,10 +9621,7 @@
                     },
                     "children": [
                       {
-                        "attributes": {
-                          "name": "uint256",
-                          "type": "uint256"
-                        },
+                        "attributes": { "name": "uint256", "type": "uint256" },
                         "id": 47,
                         "name": "ElementaryTypeName",
                         "src": "1028:7:0"
@@ -9843,10 +9673,7 @@
                     },
                     "children": [
                       {
-                        "attributes": {
-                          "name": "uint256",
-                          "type": "uint256"
-                        },
+                        "attributes": { "name": "uint256", "type": "uint256" },
                         "id": 51,
                         "name": "ElementaryTypeName",
                         "src": "1059:7:0"
@@ -9870,10 +9697,7 @@
                     },
                     "children": [
                       {
-                        "attributes": {
-                          "name": "bytes32",
-                          "type": "bytes32"
-                        },
+                        "attributes": { "name": "bytes32", "type": "bytes32" },
                         "id": 53,
                         "name": "ElementaryTypeName",
                         "src": "1075:7:0"
@@ -9897,10 +9721,7 @@
                     },
                     "children": [
                       {
-                        "attributes": {
-                          "name": "uint256",
-                          "type": "uint256"
-                        },
+                        "attributes": { "name": "uint256", "type": "uint256" },
                         "id": 55,
                         "name": "ElementaryTypeName",
                         "src": "1095:7:0"
@@ -9943,10 +9764,7 @@
                     },
                     "children": [
                       {
-                        "attributes": {
-                          "name": "uint256",
-                          "type": "uint256"
-                        },
+                        "attributes": { "name": "uint256", "type": "uint256" },
                         "id": 59,
                         "name": "ElementaryTypeName",
                         "src": "1137:7:0"
@@ -9998,10 +9816,7 @@
                     },
                     "children": [
                       {
-                        "attributes": {
-                          "name": "uint256",
-                          "type": "uint256"
-                        },
+                        "attributes": { "name": "uint256", "type": "uint256" },
                         "id": 63,
                         "name": "ElementaryTypeName",
                         "src": "1168:7:0"
@@ -10025,10 +9840,7 @@
                     },
                     "children": [
                       {
-                        "attributes": {
-                          "name": "bytes32",
-                          "type": "bytes32"
-                        },
+                        "attributes": { "name": "bytes32", "type": "bytes32" },
                         "id": 65,
                         "name": "ElementaryTypeName",
                         "src": "1184:7:0"
@@ -10052,10 +9864,7 @@
                     },
                     "children": [
                       {
-                        "attributes": {
-                          "name": "bytes32",
-                          "type": "bytes32"
-                        },
+                        "attributes": { "name": "bytes32", "type": "bytes32" },
                         "id": 67,
                         "name": "ElementaryTypeName",
                         "src": "1204:7:0"
@@ -10079,10 +9888,7 @@
                     },
                     "children": [
                       {
-                        "attributes": {
-                          "name": "uint256",
-                          "type": "uint256"
-                        },
+                        "attributes": { "name": "uint256", "type": "uint256" },
                         "id": 69,
                         "name": "ElementaryTypeName",
                         "src": "1220:7:0"
@@ -10125,10 +9931,7 @@
                     },
                     "children": [
                       {
-                        "attributes": {
-                          "name": "uint256",
-                          "type": "uint256"
-                        },
+                        "attributes": { "name": "uint256", "type": "uint256" },
                         "id": 73,
                         "name": "ElementaryTypeName",
                         "src": "1263:7:0"
@@ -10180,10 +9983,7 @@
                     },
                     "children": [
                       {
-                        "attributes": {
-                          "name": "uint256",
-                          "type": "uint256"
-                        },
+                        "attributes": { "name": "uint256", "type": "uint256" },
                         "id": 77,
                         "name": "ElementaryTypeName",
                         "src": "1294:7:0"
@@ -10207,10 +10007,7 @@
                     },
                     "children": [
                       {
-                        "attributes": {
-                          "name": "bytes32",
-                          "type": "bytes32"
-                        },
+                        "attributes": { "name": "bytes32", "type": "bytes32" },
                         "id": 79,
                         "name": "ElementaryTypeName",
                         "src": "1310:7:0"
@@ -10234,10 +10031,7 @@
                     },
                     "children": [
                       {
-                        "attributes": {
-                          "name": "bytes32",
-                          "type": "bytes32"
-                        },
+                        "attributes": { "name": "bytes32", "type": "bytes32" },
                         "id": 81,
                         "name": "ElementaryTypeName",
                         "src": "1330:7:0"
@@ -10261,10 +10055,7 @@
                     },
                     "children": [
                       {
-                        "attributes": {
-                          "name": "uint256",
-                          "type": "uint256"
-                        },
+                        "attributes": { "name": "uint256", "type": "uint256" },
                         "id": 83,
                         "name": "ElementaryTypeName",
                         "src": "1346:7:0"
@@ -10307,10 +10098,7 @@
                     },
                     "children": [
                       {
-                        "attributes": {
-                          "name": "uint256",
-                          "type": "uint256"
-                        },
+                        "attributes": { "name": "uint256", "type": "uint256" },
                         "id": 87,
                         "name": "ElementaryTypeName",
                         "src": "1389:7:0"
@@ -10362,10 +10150,7 @@
                     },
                     "children": [
                       {
-                        "attributes": {
-                          "name": "uint256",
-                          "type": "uint256"
-                        },
+                        "attributes": { "name": "uint256", "type": "uint256" },
                         "id": 91,
                         "name": "ElementaryTypeName",
                         "src": "1420:7:0"
@@ -10389,10 +10174,7 @@
                     },
                     "children": [
                       {
-                        "attributes": {
-                          "name": "bytes32",
-                          "type": "bytes32"
-                        },
+                        "attributes": { "name": "bytes32", "type": "bytes32" },
                         "id": 93,
                         "name": "ElementaryTypeName",
                         "src": "1436:7:0"
@@ -10416,10 +10198,7 @@
                     },
                     "children": [
                       {
-                        "attributes": {
-                          "name": "bytes32",
-                          "type": "bytes32"
-                        },
+                        "attributes": { "name": "bytes32", "type": "bytes32" },
                         "id": 95,
                         "name": "ElementaryTypeName",
                         "src": "1456:7:0"
@@ -10443,10 +10222,7 @@
                     },
                     "children": [
                       {
-                        "attributes": {
-                          "name": "uint256",
-                          "type": "uint256"
-                        },
+                        "attributes": { "name": "uint256", "type": "uint256" },
                         "id": 97,
                         "name": "ElementaryTypeName",
                         "src": "1472:7:0"
@@ -10489,10 +10265,7 @@
                     },
                     "children": [
                       {
-                        "attributes": {
-                          "name": "uint256",
-                          "type": "uint256"
-                        },
+                        "attributes": { "name": "uint256", "type": "uint256" },
                         "id": 101,
                         "name": "ElementaryTypeName",
                         "src": "1517:7:0"
@@ -10544,10 +10317,7 @@
                     },
                     "children": [
                       {
-                        "attributes": {
-                          "name": "uint256",
-                          "type": "uint256"
-                        },
+                        "attributes": { "name": "uint256", "type": "uint256" },
                         "id": 105,
                         "name": "ElementaryTypeName",
                         "src": "1548:7:0"
@@ -10571,10 +10341,7 @@
                     },
                     "children": [
                       {
-                        "attributes": {
-                          "name": "bytes32",
-                          "type": "bytes32"
-                        },
+                        "attributes": { "name": "bytes32", "type": "bytes32" },
                         "id": 107,
                         "name": "ElementaryTypeName",
                         "src": "1564:7:0"
@@ -10598,10 +10365,7 @@
                     },
                     "children": [
                       {
-                        "attributes": {
-                          "name": "uint256",
-                          "type": "uint256"
-                        },
+                        "attributes": { "name": "uint256", "type": "uint256" },
                         "id": 109,
                         "name": "ElementaryTypeName",
                         "src": "1584:7:0"
@@ -10627,9 +10391,7 @@
               "implemented": true,
               "isConstructor": true,
               "kind": "constructor",
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "",
               "scope": 678,
               "stateMutability": "nonpayable",
@@ -10638,22 +10400,14 @@
             },
             "children": [
               {
-                "attributes": {
-                  "parameters": [
-                    null
-                  ]
-                },
+                "attributes": { "parameters": [null] },
                 "children": [],
                 "id": 113,
                 "name": "ParameterList",
                 "src": "1672:2:0"
               },
               {
-                "attributes": {
-                  "parameters": [
-                    null
-                  ]
-                },
+                "attributes": { "parameters": [null] },
                 "children": [],
                 "id": 114,
                 "name": "ParameterList",
@@ -10677,9 +10431,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 10,
                               "type": "address payable",
                               "value": "owner"
@@ -10703,9 +10455,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 693,
                                   "type": "msg",
                                   "value": "msg"
@@ -10745,9 +10495,7 @@
               "implemented": true,
               "isConstructor": false,
               "kind": "function",
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "getPot",
               "scope": 678,
               "stateMutability": "view",
@@ -10756,11 +10504,7 @@
             },
             "children": [
               {
-                "attributes": {
-                  "parameters": [
-                    null
-                  ]
-                },
+                "attributes": { "parameters": [null] },
                 "children": [],
                 "id": 122,
                 "name": "ParameterList",
@@ -10781,10 +10525,7 @@
                     },
                     "children": [
                       {
-                        "attributes": {
-                          "name": "uint256",
-                          "type": "uint256"
-                        },
+                        "attributes": { "name": "uint256", "type": "uint256" },
                         "id": 123,
                         "name": "ElementaryTypeName",
                         "src": "1762:7:0"
@@ -10802,16 +10543,12 @@
               {
                 "children": [
                   {
-                    "attributes": {
-                      "functionReturnParameters": 125
-                    },
+                    "attributes": { "functionReturnParameters": 125 },
                     "children": [
                       {
                         "attributes": {
                           "argumentTypes": null,
-                          "overloadedDeclarations": [
-                            null
-                          ],
+                          "overloadedDeclarations": [null],
                           "referencedDeclaration": 33,
                           "type": "uint256",
                           "value": "_pot"
@@ -10841,9 +10578,7 @@
               "implemented": true,
               "isConstructor": false,
               "kind": "function",
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "bet",
               "scope": 678,
               "stateMutability": "nonpayable",
@@ -10866,10 +10601,7 @@
                     },
                     "children": [
                       {
-                        "attributes": {
-                          "name": "bytes32",
-                          "type": "bytes32"
-                        },
+                        "attributes": { "name": "bytes32", "type": "bytes32" },
                         "id": 130,
                         "name": "ElementaryTypeName",
                         "src": "2112:7:0"
@@ -10899,10 +10631,7 @@
                     },
                     "children": [
                       {
-                        "attributes": {
-                          "name": "bool",
-                          "type": "bool"
-                        },
+                        "attributes": { "name": "bool", "type": "bool" },
                         "id": 133,
                         "name": "ElementaryTypeName",
                         "src": "2150:4:0"
@@ -10929,9 +10658,7 @@
                           "isPure": false,
                           "isStructConstructorCall": false,
                           "lValueRequested": false,
-                          "names": [
-                            null
-                          ],
+                          "names": [null],
                           "type": "tuple()",
                           "type_conversion": false
                         },
@@ -10948,10 +10675,7 @@
                                   "typeString": "literal_string \"Not enough ETH\""
                                 }
                               ],
-                              "overloadedDeclarations": [
-                                696,
-                                697
-                              ],
+                              "overloadedDeclarations": [696, 697],
                               "referencedDeclaration": 697,
                               "type": "function (bool,string memory) pure",
                               "value": "require"
@@ -10990,9 +10714,7 @@
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
+                                      "overloadedDeclarations": [null],
                                       "referencedDeclaration": 693,
                                       "type": "msg",
                                       "value": "msg"
@@ -11009,9 +10731,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 31,
                                   "type": "uint256",
                                   "value": "BET_AMOUNT"
@@ -11062,9 +10782,7 @@
                           "isPure": false,
                           "isStructConstructorCall": false,
                           "lValueRequested": false,
-                          "names": [
-                            null
-                          ],
+                          "names": [null],
                           "type": "tuple()",
                           "type_conversion": false
                         },
@@ -11081,10 +10799,7 @@
                                   "typeString": "literal_string \"Fail to add a new Bet Info\""
                                 }
                               ],
-                              "overloadedDeclarations": [
-                                696,
-                                697
-                              ],
+                              "overloadedDeclarations": [696, 697],
                               "referencedDeclaration": 697,
                               "type": "function (bool,string memory) pure",
                               "value": "require"
@@ -11101,9 +10816,7 @@
                               "isPure": false,
                               "isStructConstructorCall": false,
                               "lValueRequested": false,
-                              "names": [
-                                null
-                              ],
+                              "names": [null],
                               "type": "bool",
                               "type_conversion": false
                             },
@@ -11116,9 +10829,7 @@
                                       "typeString": "bytes32"
                                     }
                                   ],
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 662,
                                   "type": "function (bytes32) returns (bool)",
                                   "value": "pushBet"
@@ -11130,9 +10841,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 131,
                                   "type": "bytes32",
                                   "value": "challenges"
@@ -11183,9 +10892,7 @@
                           "isPure": false,
                           "isStructConstructorCall": false,
                           "lValueRequested": false,
-                          "names": [
-                            null
-                          ],
+                          "names": [null],
                           "type": "tuple()",
                           "type_conversion": false
                         },
@@ -11214,9 +10921,7 @@
                                   "typeString": "uint256"
                                 }
                               ],
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 58,
                               "type": "function (uint256,address,uint256,bytes32,uint256)",
                               "value": "BET"
@@ -11243,9 +10948,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 12,
                                   "type": "uint256",
                                   "value": "_tail"
@@ -11291,9 +10994,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 693,
                                   "type": "msg",
                                   "value": "msg"
@@ -11322,9 +11023,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 693,
                                   "type": "msg",
                                   "value": "msg"
@@ -11341,9 +11040,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 131,
                               "type": "bytes32",
                               "value": "challenges"
@@ -11382,9 +11079,7 @@
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
+                                      "overloadedDeclarations": [null],
                                       "referencedDeclaration": 683,
                                       "type": "block",
                                       "value": "block"
@@ -11401,9 +11096,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 24,
                                   "type": "uint256",
                                   "value": "BET_BLOCK_INTERVAL"
@@ -11428,9 +11121,7 @@
                     "src": "2400:89:0"
                   },
                   {
-                    "attributes": {
-                      "functionReturnParameters": 135
-                    },
+                    "attributes": { "functionReturnParameters": 135 },
                     "children": [
                       {
                         "attributes": {
@@ -11470,9 +11161,7 @@
               "implemented": true,
               "isConstructor": false,
               "kind": "function",
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "distribute",
               "scope": 678,
               "stateMutability": "nonpayable",
@@ -11481,22 +11170,14 @@
             },
             "children": [
               {
-                "attributes": {
-                  "parameters": [
-                    null
-                  ]
-                },
+                "attributes": { "parameters": [null] },
                 "children": [],
                 "id": 170,
                 "name": "ParameterList",
                 "src": "2790:2:0"
               },
               {
-                "attributes": {
-                  "parameters": [
-                    null
-                  ]
-                },
+                "attributes": { "parameters": [null] },
                 "children": [],
                 "id": 171,
                 "name": "ParameterList",
@@ -11506,9 +11187,7 @@
                 "children": [
                   {
                     "attributes": {
-                      "assignments": [
-                        173
-                      ],
+                      "assignments": [173],
                       "initialValue": null
                     },
                     "children": [
@@ -11545,9 +11224,7 @@
                   },
                   {
                     "attributes": {
-                      "assignments": [
-                        176
-                      ],
+                      "assignments": [176],
                       "initialValue": null
                     },
                     "children": [
@@ -11584,9 +11261,7 @@
                   },
                   {
                     "attributes": {
-                      "assignments": [
-                        179
-                      ],
+                      "assignments": [179],
                       "initialValue": null
                     },
                     "children": [
@@ -11625,9 +11300,7 @@
                   },
                   {
                     "attributes": {
-                      "assignments": [
-                        182
-                      ],
+                      "assignments": [182],
                       "initialValue": null
                     },
                     "children": [
@@ -11666,9 +11339,7 @@
                   },
                   {
                     "attributes": {
-                      "assignments": [
-                        185
-                      ],
+                      "assignments": [185],
                       "initialValue": null
                     },
                     "children": [
@@ -11723,9 +11394,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 173,
                                   "type": "uint256",
                                   "value": "cur"
@@ -11737,9 +11406,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 14,
                                   "type": "uint256",
                                   "value": "_head"
@@ -11776,9 +11443,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 173,
                               "type": "uint256",
                               "value": "cur"
@@ -11790,9 +11455,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 12,
                               "type": "uint256",
                               "value": "_tail"
@@ -11823,9 +11486,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 173,
                                   "type": "uint256",
                                   "value": "cur"
@@ -11862,9 +11523,7 @@
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
+                                      "overloadedDeclarations": [null],
                                       "referencedDeclaration": 179,
                                       "type": "struct Lottery.BetInfo memory",
                                       "value": "b"
@@ -11886,9 +11545,7 @@
                                       {
                                         "attributes": {
                                           "argumentTypes": null,
-                                          "overloadedDeclarations": [
-                                            null
-                                          ],
+                                          "overloadedDeclarations": [null],
                                           "referencedDeclaration": 18,
                                           "type": "mapping(uint256 => struct Lottery.BetInfo storage ref)",
                                           "value": "_bets"
@@ -11900,9 +11557,7 @@
                                       {
                                         "attributes": {
                                           "argumentTypes": null,
-                                          "overloadedDeclarations": [
-                                            null
-                                          ],
+                                          "overloadedDeclarations": [null],
                                           "referencedDeclaration": 173,
                                           "type": "uint256",
                                           "value": "cur"
@@ -11942,9 +11597,7 @@
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
+                                      "overloadedDeclarations": [null],
                                       "referencedDeclaration": 182,
                                       "type": "enum Lottery.BlockStatus",
                                       "value": "currentBlockStatus"
@@ -11961,9 +11614,7 @@
                                       "isPure": false,
                                       "isStructConstructorCall": false,
                                       "lValueRequested": false,
-                                      "names": [
-                                        null
-                                      ],
+                                      "names": [null],
                                       "type": "enum Lottery.BlockStatus",
                                       "type_conversion": false
                                     },
@@ -11976,9 +11627,7 @@
                                               "typeString": "uint256"
                                             }
                                           ],
-                                          "overloadedDeclarations": [
-                                            null
-                                          ],
+                                          "overloadedDeclarations": [null],
                                           "referencedDeclaration": 585,
                                           "type": "function (uint256) view returns (enum Lottery.BlockStatus)",
                                           "value": "getBlockStatus"
@@ -12002,9 +11651,7 @@
                                           {
                                             "attributes": {
                                               "argumentTypes": null,
-                                              "overloadedDeclarations": [
-                                                null
-                                              ],
+                                              "overloadedDeclarations": [null],
                                               "referencedDeclaration": 179,
                                               "type": "struct Lottery.BetInfo memory",
                                               "value": "b"
@@ -12034,9 +11681,7 @@
                             "src": "3100:56:0"
                           },
                           {
-                            "attributes": {
-                              "falseBody": null
-                            },
+                            "attributes": { "falseBody": null },
                             "children": [
                               {
                                 "attributes": {
@@ -12056,9 +11701,7 @@
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
+                                      "overloadedDeclarations": [null],
                                       "referencedDeclaration": 182,
                                       "type": "enum Lottery.BlockStatus",
                                       "value": "currentBlockStatus"
@@ -12082,9 +11725,7 @@
                                       {
                                         "attributes": {
                                           "argumentTypes": null,
-                                          "overloadedDeclarations": [
-                                            null
-                                          ],
+                                          "overloadedDeclarations": [null],
                                           "referencedDeclaration": 42,
                                           "type": "type(enum Lottery.BlockStatus)",
                                           "value": "BlockStatus"
@@ -12106,11 +11747,7 @@
                               {
                                 "children": [
                                   {
-                                    "attributes": {
-                                      "assignments": [
-                                        215
-                                      ]
-                                    },
+                                    "attributes": { "assignments": [215] },
                                     "children": [
                                       {
                                         "attributes": {
@@ -12146,9 +11783,7 @@
                                           "isPure": false,
                                           "isStructConstructorCall": false,
                                           "lValueRequested": false,
-                                          "names": [
-                                            null
-                                          ],
+                                          "names": [null],
                                           "type": "bytes32",
                                           "type_conversion": false
                                         },
@@ -12161,9 +11796,7 @@
                                                   "typeString": "uint256"
                                                 }
                                               ],
-                                              "overloadedDeclarations": [
-                                                null
-                                              ],
+                                              "overloadedDeclarations": [null],
                                               "referencedDeclaration": 433,
                                               "type": "function (uint256) view returns (bytes32)",
                                               "value": "getAnswerBlockHash"
@@ -12229,9 +11862,7 @@
                                           {
                                             "attributes": {
                                               "argumentTypes": null,
-                                              "overloadedDeclarations": [
-                                                null
-                                              ],
+                                              "overloadedDeclarations": [null],
                                               "referencedDeclaration": 185,
                                               "type": "enum Lottery.BettingResult",
                                               "value": "currentBettingResult"
@@ -12248,9 +11879,7 @@
                                               "isPure": false,
                                               "isStructConstructorCall": false,
                                               "lValueRequested": false,
-                                              "names": [
-                                                null
-                                              ],
+                                              "names": [null],
                                               "type": "enum Lottery.BettingResult",
                                               "type_conversion": false
                                             },
@@ -12339,9 +11968,7 @@
                                     "src": "3433:61:0"
                                   },
                                   {
-                                    "attributes": {
-                                      "falseBody": null
-                                    },
+                                    "attributes": { "falseBody": null },
                                     "children": [
                                       {
                                         "attributes": {
@@ -12361,9 +11988,7 @@
                                           {
                                             "attributes": {
                                               "argumentTypes": null,
-                                              "overloadedDeclarations": [
-                                                null
-                                              ],
+                                              "overloadedDeclarations": [null],
                                               "referencedDeclaration": 185,
                                               "type": "enum Lottery.BettingResult",
                                               "value": "currentBettingResult"
@@ -12445,9 +12070,7 @@
                                                       "isPure": false,
                                                       "isStructConstructorCall": false,
                                                       "lValueRequested": false,
-                                                      "names": [
-                                                        null
-                                                      ],
+                                                      "names": [null],
                                                       "type": "uint256",
                                                       "type_conversion": false
                                                     },
@@ -12633,9 +12256,7 @@
                                                   "isPure": false,
                                                   "isStructConstructorCall": false,
                                                   "lValueRequested": false,
-                                                  "names": [
-                                                    null
-                                                  ],
+                                                  "names": [null],
                                                   "type": "tuple()",
                                                   "type_conversion": false
                                                 },
@@ -12867,9 +12488,7 @@
                                     "src": "3556:402:0"
                                   },
                                   {
-                                    "attributes": {
-                                      "falseBody": null
-                                    },
+                                    "attributes": { "falseBody": null },
                                     "children": [
                                       {
                                         "attributes": {
@@ -12889,9 +12508,7 @@
                                           {
                                             "attributes": {
                                               "argumentTypes": null,
-                                              "overloadedDeclarations": [
-                                                null
-                                              ],
+                                              "overloadedDeclarations": [null],
                                               "referencedDeclaration": 185,
                                               "type": "enum Lottery.BettingResult",
                                               "value": "currentBettingResult"
@@ -12999,9 +12616,7 @@
                                                   "isPure": false,
                                                   "isStructConstructorCall": false,
                                                   "lValueRequested": false,
-                                                  "names": [
-                                                    null
-                                                  ],
+                                                  "names": [null],
                                                   "type": "tuple()",
                                                   "type_conversion": false
                                                 },
@@ -13236,9 +12851,7 @@
                                     "src": "4027:290:0"
                                   },
                                   {
-                                    "attributes": {
-                                      "falseBody": null
-                                    },
+                                    "attributes": { "falseBody": null },
                                     "children": [
                                       {
                                         "attributes": {
@@ -13258,9 +12871,7 @@
                                           {
                                             "attributes": {
                                               "argumentTypes": null,
-                                              "overloadedDeclarations": [
-                                                null
-                                              ],
+                                              "overloadedDeclarations": [null],
                                               "referencedDeclaration": 185,
                                               "type": "enum Lottery.BettingResult",
                                               "value": "currentBettingResult"
@@ -13342,9 +12953,7 @@
                                                       "isPure": false,
                                                       "isStructConstructorCall": false,
                                                       "lValueRequested": false,
-                                                      "names": [
-                                                        null
-                                                      ],
+                                                      "names": [null],
                                                       "type": "uint256",
                                                       "type_conversion": false
                                                     },
@@ -13476,9 +13085,7 @@
                                                   "isPure": false,
                                                   "isStructConstructorCall": false,
                                                   "lValueRequested": false,
-                                                  "names": [
-                                                    null
-                                                  ],
+                                                  "names": [null],
                                                   "type": "tuple()",
                                                   "type_conversion": false
                                                 },
@@ -13720,9 +13327,7 @@
                             "src": "3284:1468:0"
                           },
                           {
-                            "attributes": {
-                              "falseBody": null
-                            },
+                            "attributes": { "falseBody": null },
                             "children": [
                               {
                                 "attributes": {
@@ -13742,9 +13347,7 @@
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
+                                      "overloadedDeclarations": [null],
                                       "referencedDeclaration": 182,
                                       "type": "enum Lottery.BlockStatus",
                                       "value": "currentBlockStatus"
@@ -13768,9 +13371,7 @@
                                       {
                                         "attributes": {
                                           "argumentTypes": null,
-                                          "overloadedDeclarations": [
-                                            null
-                                          ],
+                                          "overloadedDeclarations": [null],
                                           "referencedDeclaration": 42,
                                           "type": "type(enum Lottery.BlockStatus)",
                                           "value": "BlockStatus"
@@ -13807,9 +13408,7 @@
                             "src": "4833:88:0"
                           },
                           {
-                            "attributes": {
-                              "falseBody": null
-                            },
+                            "attributes": { "falseBody": null },
                             "children": [
                               {
                                 "attributes": {
@@ -13829,9 +13428,7 @@
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
+                                      "overloadedDeclarations": [null],
                                       "referencedDeclaration": 182,
                                       "type": "enum Lottery.BlockStatus",
                                       "value": "currentBlockStatus"
@@ -13855,9 +13452,7 @@
                                       {
                                         "attributes": {
                                           "argumentTypes": null,
-                                          "overloadedDeclarations": [
-                                            null
-                                          ],
+                                          "overloadedDeclarations": [null],
                                           "referencedDeclaration": 42,
                                           "type": "type(enum Lottery.BlockStatus)",
                                           "value": "BlockStatus"
@@ -13894,9 +13489,7 @@
                                           {
                                             "attributes": {
                                               "argumentTypes": null,
-                                              "overloadedDeclarations": [
-                                                null
-                                              ],
+                                              "overloadedDeclarations": [null],
                                               "referencedDeclaration": 176,
                                               "type": "uint256",
                                               "value": "transferAmount"
@@ -13913,9 +13506,7 @@
                                               "isPure": false,
                                               "isStructConstructorCall": false,
                                               "lValueRequested": false,
-                                              "names": [
-                                                null
-                                              ],
+                                              "names": [null],
                                               "type": "uint256",
                                               "type_conversion": false
                                             },
@@ -14013,9 +13604,7 @@
                                           "isPure": false,
                                           "isStructConstructorCall": false,
                                           "lValueRequested": false,
-                                          "names": [
-                                            null
-                                          ],
+                                          "names": [null],
                                           "type": "tuple()",
                                           "type_conversion": false
                                         },
@@ -14044,9 +13633,7 @@
                                                   "typeString": "uint256"
                                                 }
                                               ],
-                                              "overloadedDeclarations": [
-                                                null
-                                              ],
+                                              "overloadedDeclarations": [null],
                                               "referencedDeclaration": 112,
                                               "type": "function (uint256,address,uint256,bytes32,uint256)",
                                               "value": "REFUND"
@@ -14058,9 +13645,7 @@
                                           {
                                             "attributes": {
                                               "argumentTypes": null,
-                                              "overloadedDeclarations": [
-                                                null
-                                              ],
+                                              "overloadedDeclarations": [null],
                                               "referencedDeclaration": 173,
                                               "type": "uint256",
                                               "value": "cur"
@@ -14103,9 +13688,7 @@
                                           {
                                             "attributes": {
                                               "argumentTypes": null,
-                                              "overloadedDeclarations": [
-                                                null
-                                              ],
+                                              "overloadedDeclarations": [null],
                                               "referencedDeclaration": 176,
                                               "type": "uint256",
                                               "value": "transferAmount"
@@ -14206,9 +13789,7 @@
                                   "isPure": false,
                                   "isStructConstructorCall": false,
                                   "lValueRequested": false,
-                                  "names": [
-                                    null
-                                  ],
+                                  "names": [null],
                                   "type": "bool",
                                   "type_conversion": false
                                 },
@@ -14221,9 +13802,7 @@
                                           "typeString": "uint256"
                                         }
                                       ],
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
+                                      "overloadedDeclarations": [null],
                                       "referencedDeclaration": 677,
                                       "type": "function (uint256) returns (bool)",
                                       "value": "popBet"
@@ -14235,9 +13814,7 @@
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
+                                      "overloadedDeclarations": [null],
                                       "referencedDeclaration": 173,
                                       "type": "uint256",
                                       "value": "cur"
@@ -14282,9 +13859,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 14,
                               "type": "uint256",
                               "value": "_head"
@@ -14296,9 +13871,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 173,
                               "type": "uint256",
                               "value": "cur"
@@ -14333,9 +13906,7 @@
               "implemented": true,
               "isConstructor": false,
               "kind": "function",
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "transferAfterPayingFee",
               "scope": 678,
               "stateMutability": "nonpayable",
@@ -14385,10 +13956,7 @@
                     },
                     "children": [
                       {
-                        "attributes": {
-                          "name": "uint256",
-                          "type": "uint256"
-                        },
+                        "attributes": { "name": "uint256", "type": "uint256" },
                         "id": 365,
                         "name": "ElementaryTypeName",
                         "src": "5456:7:0"
@@ -14418,10 +13986,7 @@
                     },
                     "children": [
                       {
-                        "attributes": {
-                          "name": "uint256",
-                          "type": "uint256"
-                        },
+                        "attributes": { "name": "uint256", "type": "uint256" },
                         "id": 368,
                         "name": "ElementaryTypeName",
                         "src": "5490:7:0"
@@ -14439,11 +14004,7 @@
               {
                 "children": [
                   {
-                    "attributes": {
-                      "assignments": [
-                        372
-                      ]
-                    },
+                    "attributes": { "assignments": [372] },
                     "children": [
                       {
                         "attributes": {
@@ -14494,11 +14055,7 @@
                     "src": "5557:15:0"
                   },
                   {
-                    "attributes": {
-                      "assignments": [
-                        376
-                      ]
-                    },
+                    "attributes": { "assignments": [376] },
                     "children": [
                       {
                         "attributes": {
@@ -14544,9 +14101,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 366,
                               "type": "uint256",
                               "value": "amount"
@@ -14558,9 +14113,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 372,
                               "type": "uint256",
                               "value": "fee"
@@ -14589,9 +14142,7 @@
                           "isPure": false,
                           "isStructConstructorCall": false,
                           "lValueRequested": false,
-                          "names": [
-                            null
-                          ],
+                          "names": [null],
                           "type": "tuple()",
                           "type_conversion": false
                         },
@@ -14616,9 +14167,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 364,
                                   "type": "address payable",
                                   "value": "addr"
@@ -14635,9 +14184,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 376,
                               "type": "uint256",
                               "value": "amountWithoutFee"
@@ -14666,9 +14213,7 @@
                           "isPure": false,
                           "isStructConstructorCall": false,
                           "lValueRequested": false,
-                          "names": [
-                            null
-                          ],
+                          "names": [null],
                           "type": "tuple()",
                           "type_conversion": false
                         },
@@ -14693,9 +14238,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 10,
                                   "type": "address payable",
                                   "value": "owner"
@@ -14712,9 +14255,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 372,
                               "type": "uint256",
                               "value": "fee"
@@ -14734,16 +14275,12 @@
                     "src": "5731:19:0"
                   },
                   {
-                    "attributes": {
-                      "functionReturnParameters": 370
-                    },
+                    "attributes": { "functionReturnParameters": 370 },
                     "children": [
                       {
                         "attributes": {
                           "argumentTypes": null,
-                          "overloadedDeclarations": [
-                            null
-                          ],
+                          "overloadedDeclarations": [null],
                           "referencedDeclaration": 376,
                           "type": "uint256",
                           "value": "amountWithoutFee"
@@ -14773,9 +14310,7 @@
               "implemented": true,
               "isConstructor": false,
               "kind": "function",
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "setAnswerForTest",
               "scope": 678,
               "stateMutability": "nonpayable",
@@ -14798,10 +14333,7 @@
                     },
                     "children": [
                       {
-                        "attributes": {
-                          "name": "bytes32",
-                          "type": "bytes32"
-                        },
+                        "attributes": { "name": "bytes32", "type": "bytes32" },
                         "id": 397,
                         "name": "ElementaryTypeName",
                         "src": "6205:7:0"
@@ -14831,10 +14363,7 @@
                     },
                     "children": [
                       {
-                        "attributes": {
-                          "name": "bool",
-                          "type": "bool"
-                        },
+                        "attributes": { "name": "bool", "type": "bool" },
                         "id": 400,
                         "name": "ElementaryTypeName",
                         "src": "6237:4:0"
@@ -14861,9 +14390,7 @@
                           "isPure": false,
                           "isStructConstructorCall": false,
                           "lValueRequested": false,
-                          "names": [
-                            null
-                          ],
+                          "names": [null],
                           "type": "tuple()",
                           "type_conversion": false
                         },
@@ -14880,10 +14407,7 @@
                                   "typeString": "literal_string \"Only owner can set the answer for test mode\""
                                 }
                               ],
-                              "overloadedDeclarations": [
-                                696,
-                                697
-                              ],
+                              "overloadedDeclarations": [696, 697],
                               "referencedDeclaration": 697,
                               "type": "function (bool,string memory) pure",
                               "value": "require"
@@ -14922,9 +14446,7 @@
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
+                                      "overloadedDeclarations": [null],
                                       "referencedDeclaration": 693,
                                       "type": "msg",
                                       "value": "msg"
@@ -14941,9 +14463,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 10,
                                   "type": "address payable",
                                   "value": "owner"
@@ -15000,9 +14520,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 38,
                               "type": "bytes32",
                               "value": "answerForTest"
@@ -15014,9 +14532,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 398,
                               "type": "bytes32",
                               "value": "answer"
@@ -15036,9 +14552,7 @@
                     "src": "6345:22:0"
                   },
                   {
-                    "attributes": {
-                      "functionReturnParameters": 402
-                    },
+                    "attributes": { "functionReturnParameters": 402 },
                     "children": [
                       {
                         "attributes": {
@@ -15078,9 +14592,7 @@
               "implemented": true,
               "isConstructor": false,
               "kind": "function",
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "getAnswerBlockHash",
               "scope": 678,
               "stateMutability": "view",
@@ -15103,10 +14615,7 @@
                     },
                     "children": [
                       {
-                        "attributes": {
-                          "name": "uint256",
-                          "type": "uint256"
-                        },
+                        "attributes": { "name": "uint256", "type": "uint256" },
                         "id": 419,
                         "name": "ElementaryTypeName",
                         "src": "6429:7:0"
@@ -15136,10 +14645,7 @@
                     },
                     "children": [
                       {
-                        "attributes": {
-                          "name": "bytes32",
-                          "type": "bytes32"
-                        },
+                        "attributes": { "name": "bytes32", "type": "bytes32" },
                         "id": 422,
                         "name": "ElementaryTypeName",
                         "src": "6479:7:0"
@@ -15157,9 +14663,7 @@
               {
                 "children": [
                   {
-                    "attributes": {
-                      "functionReturnParameters": 424
-                    },
+                    "attributes": { "functionReturnParameters": 424 },
                     "children": [
                       {
                         "attributes": {
@@ -15174,9 +14678,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 36,
                               "type": "bool",
                               "value": "mode"
@@ -15193,9 +14695,7 @@
                               "isPure": false,
                               "isStructConstructorCall": false,
                               "lValueRequested": false,
-                              "names": [
-                                null
-                              ],
+                              "names": [null],
                               "type": "bytes32",
                               "type_conversion": false
                             },
@@ -15208,9 +14708,7 @@
                                       "typeString": "uint256"
                                     }
                                   ],
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 684,
                                   "type": "function (uint256) view returns (bytes32)",
                                   "value": "blockhash"
@@ -15222,9 +14720,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 420,
                                   "type": "uint256",
                                   "value": "answerBlockNumber"
@@ -15241,9 +14737,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 38,
                               "type": "bytes32",
                               "value": "answerForTest"
@@ -15278,9 +14772,7 @@
               "implemented": true,
               "isConstructor": false,
               "kind": "function",
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "isMatch",
               "scope": 678,
               "stateMutability": "pure",
@@ -15303,10 +14795,7 @@
                     },
                     "children": [
                       {
-                        "attributes": {
-                          "name": "bytes32",
-                          "type": "bytes32"
-                        },
+                        "attributes": { "name": "bytes32", "type": "bytes32" },
                         "id": 434,
                         "name": "ElementaryTypeName",
                         "src": "6758:7:0"
@@ -15329,10 +14818,7 @@
                     },
                     "children": [
                       {
-                        "attributes": {
-                          "name": "bytes32",
-                          "type": "bytes32"
-                        },
+                        "attributes": { "name": "bytes32", "type": "bytes32" },
                         "id": 436,
                         "name": "ElementaryTypeName",
                         "src": "6778:7:0"
@@ -15385,11 +14871,7 @@
               {
                 "children": [
                   {
-                    "attributes": {
-                      "assignments": [
-                        443
-                      ]
-                    },
+                    "attributes": { "assignments": [443] },
                     "children": [
                       {
                         "attributes": {
@@ -15420,9 +14902,7 @@
                       {
                         "attributes": {
                           "argumentTypes": null,
-                          "overloadedDeclarations": [
-                            null
-                          ],
+                          "overloadedDeclarations": [null],
                           "referencedDeclaration": 435,
                           "type": "bytes32",
                           "value": "challenges"
@@ -15437,11 +14917,7 @@
                     "src": "6906:23:0"
                   },
                   {
-                    "attributes": {
-                      "assignments": [
-                        447
-                      ]
-                    },
+                    "attributes": { "assignments": [447] },
                     "children": [
                       {
                         "attributes": {
@@ -15472,9 +14948,7 @@
                       {
                         "attributes": {
                           "argumentTypes": null,
-                          "overloadedDeclarations": [
-                            null
-                          ],
+                          "overloadedDeclarations": [null],
                           "referencedDeclaration": 435,
                           "type": "bytes32",
                           "value": "challenges"
@@ -15489,11 +14963,7 @@
                     "src": "6939:23:0"
                   },
                   {
-                    "attributes": {
-                      "assignments": [
-                        451
-                      ]
-                    },
+                    "attributes": { "assignments": [451] },
                     "children": [
                       {
                         "attributes": {
@@ -15534,9 +15004,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 437,
                               "type": "bytes32",
                               "value": "answer"
@@ -15573,11 +15041,7 @@
                     "src": "6973:22:0"
                   },
                   {
-                    "attributes": {
-                      "assignments": [
-                        457
-                      ]
-                    },
+                    "attributes": { "assignments": [457] },
                     "children": [
                       {
                         "attributes": {
@@ -15618,9 +15082,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 437,
                               "type": "bytes32",
                               "value": "answer"
@@ -15672,9 +15134,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 443,
                               "type": "bytes32",
                               "value": "c1"
@@ -15701,9 +15161,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 443,
                                   "type": "bytes32",
                                   "value": "c1"
@@ -15760,9 +15218,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 443,
                               "type": "bytes32",
                               "value": "c1"
@@ -15789,9 +15245,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 443,
                                   "type": "bytes32",
                                   "value": "c1"
@@ -15848,9 +15302,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 451,
                               "type": "bytes32",
                               "value": "a1"
@@ -15877,9 +15329,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 451,
                                   "type": "bytes32",
                                   "value": "a1"
@@ -15936,9 +15386,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 451,
                               "type": "bytes32",
                               "value": "a1"
@@ -15965,9 +15413,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 451,
                                   "type": "bytes32",
                                   "value": "a1"
@@ -16024,9 +15470,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 447,
                               "type": "bytes32",
                               "value": "c2"
@@ -16053,9 +15497,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 447,
                                   "type": "bytes32",
                                   "value": "c2"
@@ -16112,9 +15554,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 447,
                               "type": "bytes32",
                               "value": "c2"
@@ -16141,9 +15581,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 447,
                                   "type": "bytes32",
                                   "value": "c2"
@@ -16200,9 +15638,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 457,
                               "type": "bytes32",
                               "value": "a2"
@@ -16229,9 +15665,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 457,
                                   "type": "bytes32",
                                   "value": "a2"
@@ -16288,9 +15722,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 457,
                               "type": "bytes32",
                               "value": "a2"
@@ -16317,9 +15749,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 457,
                                   "type": "bytes32",
                                   "value": "a2"
@@ -16361,9 +15791,7 @@
                     "src": "7252:12:0"
                   },
                   {
-                    "attributes": {
-                      "falseBody": null
-                    },
+                    "attributes": { "falseBody": null },
                     "children": [
                       {
                         "attributes": {
@@ -16398,9 +15826,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 451,
                                   "type": "bytes32",
                                   "value": "a1"
@@ -16412,9 +15838,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 443,
                                   "type": "bytes32",
                                   "value": "c1"
@@ -16446,9 +15870,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 457,
                                   "type": "bytes32",
                                   "value": "a2"
@@ -16460,9 +15882,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 447,
                                   "type": "bytes32",
                                   "value": "c2"
@@ -16484,9 +15904,7 @@
                       {
                         "children": [
                           {
-                            "attributes": {
-                              "functionReturnParameters": 441
-                            },
+                            "attributes": { "functionReturnParameters": 441 },
                             "children": [
                               {
                                 "attributes": {
@@ -16503,9 +15921,7 @@
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
+                                      "overloadedDeclarations": [null],
                                       "referencedDeclaration": 46,
                                       "type": "type(enum Lottery.BettingResult)",
                                       "value": "BettingResult"
@@ -16535,9 +15951,7 @@
                     "src": "7275:74:0"
                   },
                   {
-                    "attributes": {
-                      "falseBody": null
-                    },
+                    "attributes": { "falseBody": null },
                     "children": [
                       {
                         "attributes": {
@@ -16572,9 +15986,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 451,
                                   "type": "bytes32",
                                   "value": "a1"
@@ -16586,9 +15998,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 443,
                                   "type": "bytes32",
                                   "value": "c1"
@@ -16620,9 +16030,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 457,
                                   "type": "bytes32",
                                   "value": "a2"
@@ -16634,9 +16042,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 447,
                                   "type": "bytes32",
                                   "value": "c2"
@@ -16658,9 +16064,7 @@
                       {
                         "children": [
                           {
-                            "attributes": {
-                              "functionReturnParameters": 441
-                            },
+                            "attributes": { "functionReturnParameters": 441 },
                             "children": [
                               {
                                 "attributes": {
@@ -16677,9 +16081,7 @@
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
+                                      "overloadedDeclarations": [null],
                                       "referencedDeclaration": 46,
                                       "type": "type(enum Lottery.BettingResult)",
                                       "value": "BettingResult"
@@ -16709,9 +16111,7 @@
                     "src": "7359:75:0"
                   },
                   {
-                    "attributes": {
-                      "functionReturnParameters": 441
-                    },
+                    "attributes": { "functionReturnParameters": 441 },
                     "children": [
                       {
                         "attributes": {
@@ -16728,9 +16128,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 46,
                               "type": "type(enum Lottery.BettingResult)",
                               "value": "BettingResult"
@@ -16765,9 +16163,7 @@
               "implemented": true,
               "isConstructor": false,
               "kind": "function",
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "getBlockStatus",
               "scope": 678,
               "stateMutability": "view",
@@ -16790,10 +16186,7 @@
                     },
                     "children": [
                       {
-                        "attributes": {
-                          "name": "uint256",
-                          "type": "uint256"
-                        },
+                        "attributes": { "name": "uint256", "type": "uint256" },
                         "id": 539,
                         "name": "ElementaryTypeName",
                         "src": "7506:7:0"
@@ -16846,9 +16239,7 @@
               {
                 "children": [
                   {
-                    "attributes": {
-                      "falseBody": null
-                    },
+                    "attributes": { "falseBody": null },
                     "children": [
                       {
                         "attributes": {
@@ -16895,9 +16286,7 @@
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
+                                      "overloadedDeclarations": [null],
                                       "referencedDeclaration": 683,
                                       "type": "block",
                                       "value": "block"
@@ -16914,9 +16303,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 540,
                                   "type": "uint256",
                                   "value": "answerBlockNumber"
@@ -16960,9 +16347,7 @@
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
+                                      "overloadedDeclarations": [null],
                                       "referencedDeclaration": 683,
                                       "type": "block",
                                       "value": "block"
@@ -16994,9 +16379,7 @@
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
+                                      "overloadedDeclarations": [null],
                                       "referencedDeclaration": 21,
                                       "type": "uint256",
                                       "value": "BLOCK_LIMIT"
@@ -17008,9 +16391,7 @@
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
+                                      "overloadedDeclarations": [null],
                                       "referencedDeclaration": 540,
                                       "type": "uint256",
                                       "value": "answerBlockNumber"
@@ -17037,9 +16418,7 @@
                       {
                         "children": [
                           {
-                            "attributes": {
-                              "functionReturnParameters": 544
-                            },
+                            "attributes": { "functionReturnParameters": 544 },
                             "children": [
                               {
                                 "attributes": {
@@ -17056,9 +16435,7 @@
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
+                                      "overloadedDeclarations": [null],
                                       "referencedDeclaration": 42,
                                       "type": "type(enum Lottery.BlockStatus)",
                                       "value": "BlockStatus"
@@ -17088,9 +16465,7 @@
                     "src": "7579:140:0"
                   },
                   {
-                    "attributes": {
-                      "falseBody": null
-                    },
+                    "attributes": { "falseBody": null },
                     "children": [
                       {
                         "attributes": {
@@ -17122,9 +16497,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 683,
                                   "type": "block",
                                   "value": "block"
@@ -17141,9 +16514,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 540,
                               "type": "uint256",
                               "value": "answerBlockNumber"
@@ -17160,9 +16531,7 @@
                       {
                         "children": [
                           {
-                            "attributes": {
-                              "functionReturnParameters": 544
-                            },
+                            "attributes": { "functionReturnParameters": 544 },
                             "children": [
                               {
                                 "attributes": {
@@ -17179,9 +16548,7 @@
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
+                                      "overloadedDeclarations": [null],
                                       "referencedDeclaration": 42,
                                       "type": "type(enum Lottery.BlockStatus)",
                                       "value": "BlockStatus"
@@ -17211,9 +16578,7 @@
                     "src": "7729:93:0"
                   },
                   {
-                    "attributes": {
-                      "falseBody": null
-                    },
+                    "attributes": { "falseBody": null },
                     "children": [
                       {
                         "attributes": {
@@ -17245,9 +16610,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 683,
                                   "type": "block",
                                   "value": "block"
@@ -17279,9 +16642,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 540,
                                   "type": "uint256",
                                   "value": "answerBlockNumber"
@@ -17293,9 +16654,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 21,
                                   "type": "uint256",
                                   "value": "BLOCK_LIMIT"
@@ -17317,9 +16676,7 @@
                       {
                         "children": [
                           {
-                            "attributes": {
-                              "functionReturnParameters": 544
-                            },
+                            "attributes": { "functionReturnParameters": 544 },
                             "children": [
                               {
                                 "attributes": {
@@ -17336,9 +16693,7 @@
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
+                                      "overloadedDeclarations": [null],
                                       "referencedDeclaration": 42,
                                       "type": "type(enum Lottery.BlockStatus)",
                                       "value": "BlockStatus"
@@ -17368,9 +16723,7 @@
                     "src": "7832:112:0"
                   },
                   {
-                    "attributes": {
-                      "functionReturnParameters": 544
-                    },
+                    "attributes": { "functionReturnParameters": 544 },
                     "children": [
                       {
                         "attributes": {
@@ -17387,9 +16740,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 42,
                               "type": "type(enum Lottery.BlockStatus)",
                               "value": "BlockStatus"
@@ -17424,9 +16775,7 @@
               "implemented": true,
               "isConstructor": false,
               "kind": "function",
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "getBetInfo",
               "scope": 678,
               "stateMutability": "view",
@@ -17449,10 +16798,7 @@
                     },
                     "children": [
                       {
-                        "attributes": {
-                          "name": "uint256",
-                          "type": "uint256"
-                        },
+                        "attributes": { "name": "uint256", "type": "uint256" },
                         "id": 586,
                         "name": "ElementaryTypeName",
                         "src": "8123:7:0"
@@ -17482,10 +16828,7 @@
                     },
                     "children": [
                       {
-                        "attributes": {
-                          "name": "uint256",
-                          "type": "uint256"
-                        },
+                        "attributes": { "name": "uint256", "type": "uint256" },
                         "id": 589,
                         "name": "ElementaryTypeName",
                         "src": "8159:7:0"
@@ -17535,10 +16878,7 @@
                     },
                     "children": [
                       {
-                        "attributes": {
-                          "name": "bytes32",
-                          "type": "bytes32"
-                        },
+                        "attributes": { "name": "bytes32", "type": "bytes32" },
                         "id": 593,
                         "name": "ElementaryTypeName",
                         "src": "8202:7:0"
@@ -17556,11 +16896,7 @@
               {
                 "children": [
                   {
-                    "attributes": {
-                      "assignments": [
-                        597
-                      ]
-                    },
+                    "attributes": { "assignments": [597] },
                     "children": [
                       {
                         "attributes": {
@@ -17603,9 +16939,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 18,
                               "type": "mapping(uint256 => struct Lottery.BetInfo storage ref)",
                               "value": "_bets"
@@ -17617,9 +16951,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 587,
                               "type": "uint256",
                               "value": "index"
@@ -17654,9 +16986,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 590,
                               "type": "uint256",
                               "value": "answerBlockNumber"
@@ -17680,9 +17010,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 597,
                                   "type": "struct Lottery.BetInfo memory",
                                   "value": "b"
@@ -17722,9 +17050,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 592,
                               "type": "address",
                               "value": "bettor"
@@ -17748,9 +17074,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 597,
                                   "type": "struct Lottery.BetInfo memory",
                                   "value": "b"
@@ -17790,9 +17114,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 594,
                               "type": "bytes32",
                               "value": "challenges"
@@ -17816,9 +17138,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 597,
                                   "type": "struct Lottery.BetInfo memory",
                                   "value": "b"
@@ -17858,9 +17178,7 @@
               "implemented": true,
               "isConstructor": false,
               "kind": "function",
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "pushBet",
               "scope": 678,
               "stateMutability": "nonpayable",
@@ -17883,10 +17201,7 @@
                     },
                     "children": [
                       {
-                        "attributes": {
-                          "name": "bytes32",
-                          "type": "bytes32"
-                        },
+                        "attributes": { "name": "bytes32", "type": "bytes32" },
                         "id": 619,
                         "name": "ElementaryTypeName",
                         "src": "8404:7:0"
@@ -17916,10 +17231,7 @@
                     },
                     "children": [
                       {
-                        "attributes": {
-                          "name": "bool",
-                          "type": "bool"
-                        },
+                        "attributes": { "name": "bool", "type": "bool" },
                         "id": 622,
                         "name": "ElementaryTypeName",
                         "src": "8442:4:0"
@@ -17938,9 +17250,7 @@
                 "children": [
                   {
                     "attributes": {
-                      "assignments": [
-                        626
-                      ],
+                      "assignments": [626],
                       "initialValue": null
                     },
                     "children": [
@@ -18005,9 +17315,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 626,
                                   "type": "struct Lottery.BetInfo memory",
                                   "value": "b"
@@ -18036,9 +17344,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 693,
                                   "type": "msg",
                                   "value": "msg"
@@ -18090,9 +17396,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 626,
                                   "type": "struct Lottery.BetInfo memory",
                                   "value": "b"
@@ -18136,9 +17440,7 @@
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
+                                      "overloadedDeclarations": [null],
                                       "referencedDeclaration": 683,
                                       "type": "block",
                                       "value": "block"
@@ -18155,9 +17457,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 24,
                                   "type": "uint256",
                                   "value": "BET_BLOCK_INTERVAL"
@@ -18209,9 +17509,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 626,
                                   "type": "struct Lottery.BetInfo memory",
                                   "value": "b"
@@ -18228,9 +17526,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 620,
                               "type": "bytes32",
                               "value": "challenges"
@@ -18275,9 +17571,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 18,
                                   "type": "mapping(uint256 => struct Lottery.BetInfo storage ref)",
                                   "value": "_bets"
@@ -18289,9 +17583,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 12,
                                   "type": "uint256",
                                   "value": "_tail"
@@ -18308,9 +17600,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 626,
                               "type": "struct Lottery.BetInfo memory",
                               "value": "b"
@@ -18346,9 +17636,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 12,
                               "type": "uint256",
                               "value": "_tail"
@@ -18368,9 +17656,7 @@
                     "src": "8642:7:0"
                   },
                   {
-                    "attributes": {
-                      "functionReturnParameters": 624
-                    },
+                    "attributes": { "functionReturnParameters": 624 },
                     "children": [
                       {
                         "attributes": {
@@ -18410,9 +17696,7 @@
               "implemented": true,
               "isConstructor": false,
               "kind": "function",
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "popBet",
               "scope": 678,
               "stateMutability": "nonpayable",
@@ -18435,10 +17719,7 @@
                     },
                     "children": [
                       {
-                        "attributes": {
-                          "name": "uint256",
-                          "type": "uint256"
-                        },
+                        "attributes": { "name": "uint256", "type": "uint256" },
                         "id": 663,
                         "name": "ElementaryTypeName",
                         "src": "8700:7:0"
@@ -18468,10 +17749,7 @@
                     },
                     "children": [
                       {
-                        "attributes": {
-                          "name": "bool",
-                          "type": "bool"
-                        },
+                        "attributes": { "name": "bool", "type": "bool" },
                         "id": 666,
                         "name": "ElementaryTypeName",
                         "src": "8733:4:0"
@@ -18515,9 +17793,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 18,
                                   "type": "mapping(uint256 => struct Lottery.BetInfo storage ref)",
                                   "value": "_bets"
@@ -18529,9 +17805,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 664,
                                   "type": "uint256",
                                   "value": "index"
@@ -18556,9 +17830,7 @@
                     "src": "8862:19:0"
                   },
                   {
-                    "attributes": {
-                      "functionReturnParameters": 668
-                    },
+                    "attributes": { "functionReturnParameters": 668 },
                     "children": [
                       {
                         "attributes": {
@@ -18648,15 +17920,10 @@
       },
       "isMatch(bytes32,bytes32)": {
         "details": "베팅글자와 정답을 확인한다",
-        "params": {
-          "answer": "블럭 해쉬",
-          "challenges": "베팅 글자"
-        },
+        "params": { "answer": "블럭 해쉬", "challenges": "베팅 글자" },
         "return": "정답결과"
       }
     }
   },
-  "userdoc": {
-    "methods": {}
-  }
+  "userdoc": { "methods": {} }
 }
