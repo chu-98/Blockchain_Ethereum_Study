@@ -10,7 +10,7 @@ contract Lottery {
         bytes32 challenges;
     }
 
-    address public owner;
+    address payable public owner;
 
     // 도메인 설계!!
     uint256 private _tail;
@@ -111,6 +111,25 @@ contract Lottery {
             
             popBet(cur);
         }
+    }
+    function transferAfterPayingFee(address payable addr, uint256 amount) internal returns (uint256) {
+        
+        // uint256 fee = amount / 100;
+        uint256 fee = 0;
+        uint256 amountWithoutFee = amount - fee;
+
+        // transfer to addr
+        addr.transfer(amountWithoutFee);
+
+        // transfer to owner
+        owner.transfer(fee);
+
+        // 이더를 전송하는 방법 3가지 
+        // -> call(단순히 이더보내는 것 뿐만 아니라 다른 S.C에 특정 Function 호출할 때 사용, 되도록 이더 전송 때는 사용 노노)
+        // -> send(실패하면 False로 Return)
+        // -> transfer(딱 이더만 던져주고 실패하면 S.C 자체를 Fail 시켜버린다 = 가장 안정적)
+
+        return amountWithoutFee;
     }
 
     function setAnswerForTest(bytes32 answer) public returns (bool result) {
