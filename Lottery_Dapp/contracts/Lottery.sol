@@ -35,7 +35,10 @@ contract Lottery {
     enum BettingResult{Fail, Win, Draw}
 
     event BET(uint256 index, address bettor, uint256 amount, bytes32 challenges, uint256 answerBlockNumber);
-
+    event WIN(uint256 index, address bettor, uint256 amount, bytes32 challenges, bytes32 answer, uint256 answerBlockNumber);
+    event FAIL(uint256 index, address bettor, uint256 amount, bytes32 challenges, bytes32 answer, uint256 answerBlockNumber);
+    event DRAW(uint256 index, address bettor, uint256 amount, bytes32 challenges, bytes32 answer, uint256 answerBlockNumber);
+    event REFUND(uint256 index, address bettor, uint256 amount, bytes32 challenges, uint256 answerBlockNumber);
     // 가장 처음 배포가 되는 함수
     constructor() public {
         owner = msg.sender;
@@ -64,11 +67,16 @@ contract Lottery {
 
         return true;
     }
-
+    /**
+    * @dev 베팅 결과값을 확인 하고 팟머니를 분배한다.
+    * 정답 실패 : 팟머니 축적, 정답 맞춤 : 팟머니 획득, 한 글자 맞춤 or 정답 확인 불가 : 베팅 금액만 획득
+     */
     // Distribute
     function distribute() public {
         // head 3 4 5 6 7 8 9 10 11 12 tail - queue
         uint256 cur;
+        uint256 transferAmount;
+
         BetInfo memory b;
         BlockStatus currentBlockStatus;
         BettingResult currentBettingResult;
@@ -79,24 +87,36 @@ contract Lottery {
 
             // 1. Checkable : block.number > answerBlockNumber && block.number < BLOCK_LIMIT + answerBlockNumber
             if(currentBlockStatus == BlockStatus.checkable) {
-                currentBettingResult = isMatch(b.challenges, blockhash(b.answerBlockNumber));
+                bytes32 answerBlockHash = getAnswerBlockHash(b.answerBlockNumber);
+                currentBettingResult = isMatch(b.challenges, answerBlockHash);
+
                 // if win, bettor gets pot
                 if(currentBettingResult == BettingResult.Win) {
                     // transfer pot
+                    transferAmount = transferAfterPayingFee(b.bettor, _pot + BET_AMOUNT);
+
                     // pot = 0
+                    _pot = 0;
+
                     // emit WIN
+                    emit WIN(cur, b.bettor, transferAmount, b.challenges, answerBlockHash[0], b.answerBlockNumber);
                 }
                 // if fail, bettor's money goes pot
                 if(currentBettingResult == BettingResult.Fail) {
                     // pot = pot + BET_AMOUNT
+                    _pot += BET_AMOUNT;
+
                     // emit FAIL
+                    emit FAIL(cur, b.bettor, 0, b.challenges, answerBlockHash[0], b.answerBlockNumber);
                 }
                 // if draw, refund bettor's money
                 if(currentBettingResult == BettingResult.Win) {
                     // transfer only BET_AMOUNT
-                    // emit DRAW
-                }
+                    transferAmount = transferAfterPayingFee(b.bettor, _pot + BET_AMOUNT);
 
+                    // emit DRAW
+                    emit DRAW(cur, b.bettor, transferAmount, b.challenges, answerBlockHash[0], b.answerBlockNumber);
+                }
             }
 
             // 2. Not Revealed : block.number <= answerBlockNumber
@@ -106,11 +126,14 @@ contract Lottery {
             // 3. Block Limit Passed : block.number >= answerBlockNumber + BLOCK_LIMIT
             if(currentBlockStatus == BlockStatus.BlockLimitPassed) {
                 // refund
+                transferAmount = transferAfterPayingFee(b.bettor, BET_AMOUNT);
                 // emit refund
+                emit REFUND(cur, b.bettor, transferAmount, b.challenges, b.answerBlockNumber);
             }
             
             popBet(cur);
         }
+        _head = cur;
     }
     function transferAfterPayingFee(address payable addr, uint256 amount) internal returns (uint256) {
         
