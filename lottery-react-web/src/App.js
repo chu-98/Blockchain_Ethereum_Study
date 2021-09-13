@@ -382,3 +382,14 @@ class App extends Component {
 }
 
 export default App;
+
+// Dapp 데이터 관리
+// 'Read'
+// - Smart Contract 직접 Call (EVM을 왔다갔다 계속 거치기에 느리다) (batch read call - 크게 read?)
+// - event log 읽는 방법 (index로 특정할 수 있으며 빠르게 데이터 가져올 수 있다)
+//   - http(polling)
+//   - websocket
+//     1. init와 동시에 past event 가져온다
+//     2. websocket으로 geth 또는 infura와 연결
+//     3. websocket으로 원하는 이벤트 subscribe (ws 사용하지 않으면, 롱 폴링 - 3초마다 묻기)
+//     4. 주의) 돈이 크게 걸려있는 서비스 -> block confirm 확인 (최소 20 컨펌 정도가 안전하고 그때 front)
