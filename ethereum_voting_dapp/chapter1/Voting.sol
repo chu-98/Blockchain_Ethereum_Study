@@ -51,3 +51,7 @@ contract Voting {
       return false;
     }
 }
+
+// Voting & Lottery Dapp
+// 09.14 ~ 10.03
+// Solidity + React + Express
