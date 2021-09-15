@@ -53,5 +53,10 @@ contract Voting {
 }
 
 // Voting & Lottery Dapp
-// 09.14 ~ 10.03
+// 21.09.14 ~ 21.10.03
 // Solidity + React + Express
+
+// 21.09.15
+// 공설입 아이디어 확정
+// 기계공학 수업 많은 날
+// 독서토론 모임
