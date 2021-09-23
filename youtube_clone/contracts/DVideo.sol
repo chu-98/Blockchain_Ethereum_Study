@@ -1,6 +1,11 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.4.22 <0.9.0;
 
+// 1. Model the Video
+// 2. Store the Video
+// 3. Upload Video
+// 4. List Video
+
 contract DVideo {
   uint public videoCount = 0;
   string public name = "DVideo";
